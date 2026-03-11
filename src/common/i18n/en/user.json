@@ -1,0 +1,68 @@
+{
+  "checkUserPassword": {
+    "currentPassword": "You must reset your credentials",
+    "compareCrypt": "There was a problem validating the current password"
+  },
+  "checkPasswordConfirm": {
+    "password": "confirmationPassword must be equal to password"
+  },
+  "partialCreation": {
+    "findUser": "User with email {email} already exists in the database"
+  },
+  "externalCreation": {
+    "productKeyOrOrganization": "You must need an organization or product in the payload",
+    "organizationData": "The organization {organization} does not exist",
+    "productFound": "The product {productKey} does not exist"
+  },
+  "beforeCreate": {
+    "sameEmailUser": "User with email {userEmail} alredy exists"
+  },
+  "beforeMutation": {
+    "superAdmin": "Only a superAdmin can create, update or delete a new superAdmin user.",
+    "organizationData": "Organization with id {organizationId} does not exist"
+  },
+  "findOneByEmail": {
+    "userOrFail": "User with email: {email} not found"
+  },
+  "findOneById": {
+    "userOrFail": "User with id: {id} not found"
+  },
+  "findOneByIdentificationNumber": {
+    "userOrFail": "User with identification number: {identificationNumber} not found"
+  },
+  "sendEmailRecoveryPassword": {
+    "response": "Code sent successfully"
+  },
+  "validateAndRetrieveUserByToken": {
+    "error": "Invalid token"
+  },
+  "updateUserProfile": {
+    "organizationData": "The Organization with id {organizationId} does not exist"
+  },
+  "codeRecoverPassword": {
+    "result": "Invalid code"
+  },
+  "authByCode": {
+    "getRecord": "Code not valid",
+    "expired": "Code expired",
+    "error": "Error in the code entered"
+  },
+  "recoverPasswordEmail": {
+    "error": "An error occurred while creating the notification: {result}"
+  },
+  "temporalPassword": {
+    "error": "An error occurred while creating the notification: {result}"
+  },
+  "processInstance": {
+    "hasSigners": "No valid signatories found"
+  },
+  "assignSigner": {
+    "allSigners": "No signatories were found in the instance",
+    "organizationId": "No organization was found associated with the instance",
+    "processDefinition": "No process definition associated with the instance was found.",
+    "user": "It was not possible to obtain the user from the database."
+  },
+  "createUserRoles": {
+    "role": "Role with id: {roleId} not found"
+  }
+}

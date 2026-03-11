@@ -1,0 +1,7 @@
+{
+    "beforeMutation": {
+        "user": "User with userId {userId} not found",
+        "organization": "Organization with organizationId {organizationId} not found",
+        "organizationUser": "The organization has already registered the user"
+    }
+}

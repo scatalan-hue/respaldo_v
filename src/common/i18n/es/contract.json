@@ -1,0 +1,24 @@
+{
+  "beforeCreate": {
+    "contractAlreadyExists": "El contrato ya existe con los mismos datos.",
+    "contractAlreadyAssign": "El contrato ya está asignado al lote proporcionado",
+    "taxpayer": "Tercero no encontrado"
+  },
+  "validateInput": {
+    "organizationProduct": "Organización o producto de la api-key no existe",
+    "taxpayerInput": "El input taxpayerInput no fue suministrado",
+    "contractType": "El campo contractType no fue suministrado",
+    "consecutive": "El campo consecutive no fue suministrado",
+    "registerNotExists": "Movimiento de registro no fue suministrado",
+    "moreThanOneRegister": "Se envió mas de un movimiento de registro"
+  },
+  "findOrCreate": {
+    "documentDownloadFailed": "No se pudo descargar el documento desde la URL: {{url}}",
+    "documentCreationError": "Error al crear el archivo desde la URL: {{error}}"
+  },
+  "ContractStatus": {
+    "ERROR": "Error",
+    "SEND": "Enviado",
+    "PENDING": "Pendiente"
+  }
+}

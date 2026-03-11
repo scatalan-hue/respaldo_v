@@ -1,0 +1,33 @@
+import { registerEnumType } from '@nestjs/graphql';
+
+export enum TypeFile {
+  txt = 'TXT',
+  docx = 'DOCX',
+  xlsx = 'XLSX',
+  pptx = 'PPTX',
+  pdf = 'PDF',
+  jpg = 'JPG',
+  png = 'PNG',
+  gif = 'GIF',
+  bmp = 'BMP',
+  mp3 = 'MP3',
+  wav = 'WAV',
+  flac = 'FLAC',
+  mp4 = 'MP4',
+  avi = 'AVI',
+  mov = 'MOV',
+  zip = 'ZIP',
+  rar = 'RAR',
+  exe = 'EXE',
+  cpp = 'CPP',
+  java = 'JAVA',
+  py = 'PY',
+  csv = 'CSV',
+  key = 'KEY',
+  odp = 'ODP',
+  sqlite = 'SQLITE',
+  cfg = 'CFG',
+  xml = 'XML',
+  json = 'JSON',
+}
+registerEnumType(TypeFile, { name: 'TypeFile' });

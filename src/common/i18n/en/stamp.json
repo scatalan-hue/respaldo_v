@@ -1,0 +1,5 @@
+{
+  "beforeCreate": {
+    "stampAlreadyExists": "The stamp already exists with the same data."
+  }
+}

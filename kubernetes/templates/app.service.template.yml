@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-$KUBE_NAME_APP
+  namespace: $KUBE_NAME_SPACE # Debe crear el nombre del espacio de trabajo
+  labels:
+    app: service-$KUBE_NAME_APP
+spec:
+  ports:
+    - port: $APP_PORT
+      targetPort: 3000
+      name: "http-nestjs-principal"
+  selector:
+    app: app-$KUBE_NAME_APP
+  type: LoadBalancer

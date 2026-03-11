@@ -1,0 +1,12 @@
+{
+  "validateInput": {
+    "lotId": "Field lotId not provided",
+    "contractId": "Field contractId not provided",
+    "stampInput": "Field stampInput not provided"
+  },
+  "beforeMutation": {
+    "contract": "Contract not found",
+    "lot": "Contract not found",
+    "stamp": "Stamp not found"
+  }
+}

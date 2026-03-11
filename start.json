@@ -1,0 +1,11 @@
+{
+    "apps" : {
+        "name"        : "Vudec - backend - 7045 ",
+        "script"      : "dist/main.js",
+        "instances": 1,
+        "env": {
+            "NODE_ENV": "prod",
+            "PORT_PROD": 7045
+        }
+    }
+}

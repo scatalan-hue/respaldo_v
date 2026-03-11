@@ -1,0 +1,17 @@
+{
+  "beforeCreate": {
+    "contractAlreadyExists": "The contract already exists with the same data.",
+    "contractAlreadyAssign": "The contract is already assigned to the provided lot",
+    "taxpayer": "Third party not found"
+  },
+  "validateInput": {
+    "organizationProduct": "Organization or product of the API key do not exist",
+    "taxpayerInput": "The taxpayerInput was not provided",
+    "contractType": "The contractType field was not provided",
+    "consecutive": "The consecutive field was not provided"
+  },
+  "findOrCreate": {
+    "documentDownloadFailed": "Could not download document from URL: {{url}}",
+    "documentCreationError": "Error creating file from URL: {{error}}"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "beforeCreate": {
+    "lotAlreadyExists": "The lot already exists with the same data."
+  },
+  "validateInput": {
+    "organizationProduct": "Organization or product of the API key do not exist"
+  },
+  "findOrganizationProductByKey": {
+    "organization": "Organization by Organization key and product not found"
+  },
+  "findLotAndValidateOrganization": {
+    "lot": "Lot with {source}: {value} does not exist"
+  }
+}

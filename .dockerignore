@@ -1,0 +1,25 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/dist
+/src/graphql.schema.ts
+
+# misc
+.DS_Store
+.env
+
+# cert
+/src/certs
+*.pem
+*.pass
+*.pfx
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

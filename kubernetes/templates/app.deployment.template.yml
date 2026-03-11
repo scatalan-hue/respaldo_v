@@ -1,0 +1,75 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-$KUBE_NAME_APP
+  namespace: $KUBE_NAME_SPACE # Debe crear el nombre del espacio de trabajo
+  labels:
+    app: app-$KUBE_NAME_APP
+spec:
+  replicas: 1
+  revisionHistoryLimit: 2 # Mantener solo un ReplicaSet (el actual)
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1  # Máximo número de Pods adicionales creados temporalmente
+      maxUnavailable: 0  # Máximo número de Pods no disponibles durante la actualización
+  selector:
+    matchLabels:
+      app: app-$KUBE_NAME_APP
+  template:
+    metadata:
+      labels:
+        app: app-$KUBE_NAME_APP
+    spec:
+      volumes:
+        - name: certs-volume
+          secret:
+            secretName: vdc-certs
+      hostAliases:
+        - ip: $HOST
+          hostnames:
+            - proxy-host
+      containers:
+        - name: container-nestjs
+          image: $DOCKER_IMAGE_NESTJS
+          ports:
+            - containerPort: 3000
+          resources:
+            limits:
+              memory: 900Mi
+              cpu: "0.4"
+            requests:
+              memory: 400Mi
+              cpu: "0.25"
+          envFrom:
+            - configMapRef:
+                name: env-$KUBE_NAME_APP # Nombre del ConfigMap con las variables de entorno
+          env:
+            - name: STATE
+              value: prod
+            - name: HTTPS
+              value: "true"
+            - name: APP_PORT
+              value: "3000"
+            - name: DB_HOST
+              value: "192.168.10.252"
+            - name: DB_MONGODB_SERVER
+              value: mongodb://proxy-host:27017/
+            - name: REDIS_HOST
+              value: "proxy-host"
+            - name: TZ 
+              value: America/Bogota
+          volumeMounts:
+            - name: certs-volume
+              mountPath: /vudec/src/certs
+              readOnly: true
+          readinessProbe:
+            httpGet:
+              path: /app/singOfLike
+              port: 3000
+              scheme: HTTPS
+            initialDelaySeconds: 60 # Espera antes de empezar las pruebas
+            periodSeconds: 30  # Intervalo entre pruebas
+            failureThreshold: 5 # Número de fallos antes de marcar el Pod como no listo
+            successThreshold: 1 # Número de éxitos antes de marcar el Pod como listo
+          imagePullPolicy: Never

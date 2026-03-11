@@ -1,0 +1,3233 @@
+[33mcommit f43516445d9d3ce478ea4037ecbbc185e512bdeb[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdemo[m[33m)[m
+Merge: bc34143 24ed5f1
+Author: nicolasgg <nicolasggdev@gmail.com>
+Date:   Tue Jan 16 08:21:59 2024 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into demo
+
+[33mcommit 24ed5f1de86ecec0969cdac60905eb9946a266aa[m[33m ([m[1;31morigin/demo[m[33m)[m
+Merge: e2ed551 7d31fde
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Sat Jan 13 18:42:00 2024 +0000
+
+    Merged in dev-raimon (pull request #136)
+    
+    ✨ ADDED remove in all page blocks & items
+
+[33mcommit 7d31fde3ccf802a6bc8ca6d16d2f5f0ffc34b3cd[m
+Merge: 9dba8b7 e2ed551
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Sat Jan 13 13:41:15 2024 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-raimon
+
+[33mcommit 9dba8b70ab36425c03c947a277b8778818b24dea[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Sat Jan 13 13:36:47 2024 -0500
+
+    ✨ ADDED remove in all page blocks & items
+
+[33mcommit e2ed5518684596b61c2a4cce79fd11d5a0b5ed5e[m
+Merge: 2786653 8cd3771
+Author: Nicolas Gonzalez <ngonzalez@comercializadora-s3.com>
+Date:   Sat Jan 13 17:17:12 2024 +0000
+
+    Merged in dev-ngonzales (pull request #134)
+    
+    Dev ngonzales
+    
+    Approved-by: CS3 Development
+
+[33mcommit 2786653929d3aa6821d4366438a2178b7e51e2ee[m
+Merge: 66b329b 5d18c09
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Sat Jan 13 17:16:58 2024 +0000
+
+    Merged in dev-raimon (pull request #135)
+    
+    Dev raimon
+
+[33mcommit 5d18c09717baf3bb5c95caa3b12f244ada6909fc[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Sat Jan 13 12:09:13 2024 -0500
+
+    ✨ CHANGED sliderDescription description
+
+[33mcommit 79ddd5dbb510c83df3533fefff81453291ad77f2[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Sat Jan 13 12:06:19 2024 -0500
+
+    ✨ CHANGED silderDescription
+
+[33mcommit bc34143d8db3c72c233bb3d23d04264283cff3d6[m
+Merge: 1eabaf2 66b329b
+Author: nicolasgg <nicolasggdev@gmail.com>
+Date:   Sat Jan 13 11:35:30 2024 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into demo
+
+[33mcommit 8cd37710a4064265edc071237caa796ab3dfd595[m[33m ([m[1;31morigin/dev-ngonzales[m[33m, [m[1;32mdev-ngonzales[m[33m)[m
+Merge: 00120a3 66b329b
+Author: nicolasgg <nicolasggdev@gmail.com>
+Date:   Sat Jan 13 11:04:56 2024 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-ngonzales
+
+[33mcommit 00120a398fbcb4df3d5564d2870885af8a5ddcf1[m
+Author: nicolasgg <nicolasggdev@gmail.com>
+Date:   Sat Jan 13 11:04:38 2024 -0500
+
+    Add event to remove naveigationItem
+
+[33mcommit 66b329b98b1af247bdbcde2e7a05d8d20dd09b34[m
+Merge: 5483b95 9093445
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Sat Jan 13 16:02:55 2024 +0000
+
+    Merged in dev-raimon (pull request #133)
+    
+    ✨ ADD alternative text in corporate logo item
+
+[33mcommit 909344520f85a1be3ba1fdaccd92e94ab7b5a52f[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Sat Jan 13 11:02:13 2024 -0500
+
+    ✨ ADD alternative text in corporate logo item
+
+[33mcommit 4e5ba1dbb9bcf848334ff91d7813338c3377645c[m
+Merge: 1eabaf2 5483b95
+Author: nicolasgg <nicolasggdev@gmail.com>
+Date:   Sat Jan 13 10:58:43 2024 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-ngonzales
+
+[33mcommit 1eabaf2385dae1cd803a9c8c5561ed1ef88b8efd[m
+Author: nicolasgg <nicolasggdev@gmail.com>
+Date:   Sat Jan 13 10:58:08 2024 -0500
+
+    Add orderIndex
+
+[33mcommit 5483b95ed269c3f3831e72a06ecc0ee5d7dcf930[m
+Merge: 9bae32d eb482e3
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Sat Jan 13 15:50:52 2024 +0000
+
+    Merged in dev-raimon (pull request #131)
+    
+    ✨ ADD social links in sns block
+
+[33mcommit eb482e3d72d03001b661281b058977eb7b90546d[m
+Merge: 93185a6 9bae32d
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Sat Jan 13 10:50:05 2024 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-raimon
+
+[33mcommit 93185a6ce3511d63fbe73bf28d003c74362606b6[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Sat Jan 13 10:48:27 2024 -0500
+
+    ✨ ADD social links in sns block
+
+[33mcommit 9bae32d677399640191d523c3a0d4eb8c5e76b52[m
+Merge: aa6dd76 ffd62a7
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Jan 12 22:14:27 2024 +0000
+
+    Merged in sd-444 (pull request #128)
+    
+    Sd 444
+    
+    Approved-by: CS3 Development
+
+[33mcommit ffd62a75f4bf211450889fc8484b45db82f27a5e[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Jan 12 17:11:30 2024 -0500
+
+    Add delete event in corporate logos items
+
+[33mcommit aa6dd76599359c4212d20626e4a3123a6d0f52ab[m
+Merge: 917ae02 d788c05
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Fri Jan 12 16:35:48 2024 +0000
+
+    Merged in dev-raimon (pull request #127)
+    
+    ✨ ADDED summary to news items
+
+[33mcommit d788c0500f0f07aafd118ee84ebea357048d0859[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Fri Jan 12 11:34:55 2024 -0500
+
+    ✨ ADDED summary to news items
+
+[33mcommit 917ae026035fad902772bb2caf8e659cbeb79c30[m
+Merge: ce5e345 3ff5262
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Fri Jan 12 14:31:50 2024 +0000
+
+    Merged in dev-raimon (pull request #126)
+    
+    🐛 FIXED pagination tags in news items
+
+[33mcommit 3ff5262237d3551fa51a2761028474e17c8602f8[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Fri Jan 12 09:31:15 2024 -0500
+
+    🐛 FIXED pagination tags in news items
+
+[33mcommit ce5e345bbbed871413bc2978f0b7360f0ef5ed05[m
+Merge: 62475df 3facb9d
+Author: Nicolas Gonzalez <ngonzalez@comercializadora-s3.com>
+Date:   Thu Jan 11 21:14:09 2024 +0000
+
+    Merged in SD-458 (pull request #124)
+    
+    Fix services to recover password
+    
+    Approved-by: CS3 Development
+
+[33mcommit 62475df0d554d35dd340cfec561770352366102d[m
+Merge: a550a5c b8bb771
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Thu Jan 11 21:13:50 2024 +0000
+
+    Merged in dev-andres (pull request #125)
+    
+    page block item filters
+    
+    Approved-by: CS3 Development
+
+[33mcommit b8bb771958a54edb9d56bcc5231789d91b46e0a5[m
+Author: Andres DelaOssa <andres@comercializadora-s3.com>
+Date:   Thu Jan 11 15:57:49 2024 -0500
+
+    page block item filters
+
+[33mcommit 1f41a0608ac3aea47d8e67fcbd679f437fc7d32f[m
+Merge: 5e390e5 a550a5c
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Jan 11 15:26:13 2024 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into sd-444
+
+[33mcommit 3facb9da4c389afa3ca9d9c740db273c7d329c20[m[33m ([m[1;31morigin/SD-458[m[33m)[m
+Author: nicolasgg <nicolasggdev@gmail.com>
+Date:   Thu Jan 11 15:24:39 2024 -0500
+
+    Fix services to recover password
+
+[33mcommit 5e390e54aba173f047fdcd322687b1465ea1017b[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Jan 11 14:20:06 2024 -0500
+
+    Add description in slider
+
+[33mcommit a550a5ce0a8a38b0bf95da41748af888f76d0abe[m
+Merge: 8c4c138 5539fdb
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Jan 11 13:38:11 2024 +0000
+
+    Merged in sd-382 (pull request #123)
+    
+    transport link of interest bar to mainpage
+    
+    Approved-by: CS3 Development
+
+[33mcommit 5539fdba59fa1a7ef856460ddd426f2ce0256580[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Jan 11 08:35:12 2024 -0500
+
+    transport link of interest bar to mainpage
+
+[33mcommit 8c4c138cf5f63c8d146e8e6c59d515567941c924[m
+Merge: 9ad07e3 c5c5a47
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Wed Jan 10 21:51:24 2024 +0000
+
+    Merged in dev-raimon (pull request #122)
+    
+    🐛 FIXED mutation news items
+
+[33mcommit 9ad07e345582330d3b940b32f613133dfaeba720[m
+Merge: b681a04 b020950
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Jan 10 21:51:08 2024 +0000
+
+    Merged in sd-343 (pull request #121)
+    
+    add alternative text in social left items
+    
+    Approved-by: CS3 Development
+
+[33mcommit c5c5a47d1319c3ce75c1955dd5e63fc689d40530[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Wed Jan 10 16:50:43 2024 -0500
+
+    🐛 FIXED mutation news items
+
+[33mcommit b020950ad363796316e288441d18d1c5f71b997c[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Jan 10 14:55:02 2024 -0500
+
+    add alternative text in social left items
+
+[33mcommit b681a0404f61c60c17f467fd056819c279e660d7[m
+Merge: 3ae0984 c4aa522
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Wed Jan 10 17:47:38 2024 +0000
+
+    Merged in dev-raimon (pull request #120)
+    
+    Dev raimon
+
+[33mcommit c4aa52228483357707f80b90a07f176102d2564c[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Wed Jan 10 12:47:00 2024 -0500
+
+    ✨ ADDED status cabinet in before remove
+
+[33mcommit 8783b8ed83269c6d0db9b9d4e895d701e87e9144[m
+Merge: e9b3125 3ae0984
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Wed Jan 10 12:37:46 2024 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-raimon
+
+[33mcommit e9b3125521e00fac128b2d0f310e812beb20fcdc[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Wed Jan 10 12:36:41 2024 -0500
+
+    ✨ ADDED before remove event in items
+
+[33mcommit 3ae0984f294796207aeab727e5e4fa8d95f54f91[m
+Merge: 8d64c88 c5d7262
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Jan 10 17:35:52 2024 +0000
+
+    Merged in sd-336 (pull request #119)
+    
+    Sd 336
+    
+    Approved-by: CS3 Development
+
+[33mcommit c5d72626147d5f30342c4c785c9cd00e9ee8db6d[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Jan 10 12:33:48 2024 -0500
+
+    Add service
+
+[33mcommit 79337e7b5111c6dadd0c37eabcf4a6333a30a378[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Jan 9 18:01:22 2024 -0500
+
+    add delete only inactive items and add field in cabinet item0
+
+[33mcommit 8d64c88feb2996de03ca78f8125573ffd47e5dbe[m
+Merge: 0f85118 5191ed0
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Tue Jan 9 16:01:58 2024 +0000
+
+    Merged in dev-raimon (pull request #118)
+    
+    🐛 SET public query tags
+
+[33mcommit 5191ed024ac09ecbfc7eaf6176dc737d99985dfa[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Jan 9 11:01:03 2024 -0500
+
+    🐛 SET public query tags
+
+[33mcommit 0f85118350711550b01d61e34b4b138c1a925b73[m
+Merge: 516a528 a5b42af
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Tue Jan 9 13:22:32 2024 +0000
+
+    Merged in dev-raimon (pull request #117)
+    
+    ✨ ADDED filter tags in NewsItems
+
+[33mcommit 516a528a5fcb5d9bebca141c3062ab1a2ee427da[m
+Merge: cc1d2e8 3f4bd9f
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Jan 9 13:22:02 2024 +0000
+
+    Merged in sd-421 (pull request #116)
+    
+    Add lenght in pagelink url
+    
+    Approved-by: CS3 Development
+
+[33mcommit a5b42af6f728a6e137982ea009025ed5ea07d269[m[33m ([m[1;31morigin/dev-raimon[m[33m)[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Mon Jan 8 20:09:39 2024 -0500
+
+    ✨ ADDED filter tags in NewsItems
+
+[33mcommit 3f4bd9f8f7d79ecaa05e0628771d4893bf08ea92[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Jan 5 14:42:32 2024 -0500
+
+    Add lenght in pagelink url
+
+[33mcommit cc1d2e8253d63edeb39275a4e277bbd56de08a0e[m
+Merge: a8c712b ff75e37
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Jan 5 14:03:29 2024 +0000
+
+    Merged in sd-421 (pull request #114)
+    
+    add transparencyAccordion into pageblockService
+    
+    Approved-by: CS3 Development
+
+[33mcommit ff75e37189019c7aa4eed91c04bc60540ae04f9e[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Jan 5 08:52:51 2024 -0500
+
+    transport entities into footer location
+
+[33mcommit dc2c2f7a9d50a54f018c3bd8a5b3e89949629809[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Jan 4 17:01:35 2024 -0500
+
+    add fields in pageblock service
+
+[33mcommit a8c712b159f35de4506e53d22c1ac6207daad47e[m
+Merge: 3413a9e 5b76e8f
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Thu Jan 4 20:39:35 2024 +0000
+
+    Merged in dev-raimon (pull request #115)
+    
+    🐛 FIXED page version created
+
+[33mcommit 5b76e8f155f0882b56cfa7eab3eae4a48aebf02c[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Thu Jan 4 15:38:45 2024 -0500
+
+    🐛 FIXED page version created
+
+[33mcommit fd7283569f46c093dc289a736bddd1e0db6a27ec[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Jan 4 10:25:07 2024 -0500
+
+    add transparencyAccordion into pageblockService
+
+[33mcommit 3413a9e1da6f4c3df52285b509588a781bb0f196[m
+Merge: 2660428 8ab48db
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Thu Jan 4 13:50:44 2024 +0000
+
+    Merged in dev-raimon (pull request #113)
+    
+    Dev raimon
+
+[33mcommit 8ab48db6e677d9e406f7e3490ee167764f3d21ba[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Thu Jan 4 08:49:50 2024 -0500
+
+    🐛 FIXED update page union block
+
+[33mcommit 05d52319daba35f8765325cc41eba46b9e457c21[m
+Merge: 65e946b 2660428
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Thu Jan 4 08:49:24 2024 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-raimon
+
+[33mcommit 65e946be13d8d9177614da4a489051e913696063[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Thu Jan 4 08:45:05 2024 -0500
+
+    🐛 FIXED pressroom subpage
+
+[33mcommit 2660428a39a862e73121fd69af37e7ea89467330[m
+Merge: 23d3224 bffcb29
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Jan 4 13:43:30 2024 +0000
+
+    Merged in sd-421 (pull request #112)
+    
+    Sd 421
+    
+    Approved-by: CS3 Development
+
+[33mcommit bffcb2923a51c30fe29f9685e1c7fdb2a7fb8425[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Jan 3 17:08:21 2024 -0500
+
+    fix pagelink in transparencyItem
+
+[33mcommit ecd295a26bb3d9924d7a75ce2dc0ee02e0827bbc[m
+Merge: 8989041 23d3224
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Jan 3 15:52:59 2024 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into sd-421
+
+[33mcommit 898904144421632021a78a09e1fc1c5e11dd5979[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Jan 3 14:49:31 2024 -0500
+
+    Add resolver for transparency query
+
+[33mcommit 23d32249ac534368c97925dd6f67890448c57848[m
+Merge: 4cf463b ceb5cd9
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Wed Jan 3 17:32:11 2024 +0000
+
+    Merged in dev-raimon (pull request #111)
+    
+    ✨ ADDED pressroom resolver
+
+[33mcommit ceb5cd9d7a213e80ff49cf79088f1322e4631ff7[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Wed Jan 3 12:31:22 2024 -0500
+
+    ✨ ADDED pressroom service
+
+[33mcommit 9cec5e5a4b31d1155e4014e45dd16cf6ae7295e9[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Jan 3 11:21:42 2024 -0500
+
+    create transparency accordion
+
+[33mcommit 4cf463b4ba4a1a7e17c8f527f4b0e132541f1ccd[m
+Merge: 4b58e2f 753d710
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Wed Jan 3 15:37:19 2024 +0000
+
+    Merged in dev-raimon (pull request #110)
+    
+    ✨ ADDED consecutive filter in page version
+
+[33mcommit 753d71020d9e46318f0ada1e015e884a8ebd136a[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Wed Jan 3 10:35:37 2024 -0500
+
+    ✨ ADDED consecutive filter in page version
+
+[33mcommit 70afab51aa3a6c59ef7d58f32781959350d1775e[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Jan 3 09:11:53 2024 -0500
+
+    Transform transparency
+
+[33mcommit 4b58e2f1c5ce0e0f75e94f10ffafc29a4d6250c8[m
+Merge: 0095219 20a5964
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Wed Jan 3 13:34:04 2024 +0000
+
+    Merged in dev-raimon (pull request #109)
+    
+    🐛 FIX create page version
+
+[33mcommit 20a59647ef31b103ebbe7db4c53900297ea78ce4[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Wed Jan 3 08:09:02 2024 -0500
+
+    🐛 FIX create page version
+
+[33mcommit 7346269c6f0950f2e3f749e0c2c5aabbcf1f3b93[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Jan 2 18:06:44 2024 -0500
+
+    Add transparency header block
+
+[33mcommit 009521993aaa07278dbd3ec951fe4055707fa146[m
+Merge: a0a0ea4 c8d2a3b
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Tue Jan 2 17:50:32 2024 +0000
+
+    Merged in dev-raimon (pull request #108)
+    
+    🐛 CHANGED default value
+
+[33mcommit c8d2a3bdc9f332ffbd71c4c368715db2a1020afc[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Jan 2 12:49:54 2024 -0500
+
+    🐛 CHANGED default value
+
+[33mcommit a0a0ea4fee39a04eb151bac9bb871b96e2cfae5c[m
+Merge: 01c2614 f68103f
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Tue Jan 2 17:34:44 2024 +0000
+
+    Merged in dev-raimon (pull request #107)
+    
+    🐛 FIX utc date in page version
+
+[33mcommit f68103fa1a2dd2058c69f8236f1dfbefe5eead98[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Jan 2 12:33:51 2024 -0500
+
+    🐛 FIX utc date in page version
+
+[33mcommit 6b0ae3c1650ce45e74a1f3b27bd0f9d517020102[m
+Merge: 49893e6 01c2614
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Jan 2 12:31:17 2024 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-raimon
+
+[33mcommit 01c2614a7ba833600054bb08b804ef503bdc4c49[m
+Merge: 89975ce 576409d
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Tue Jan 2 16:39:38 2024 +0000
+
+    Merged in dev-raimon (pull request #106)
+    
+    ✨ ADD consecutive date update
+
+[33mcommit 49893e64be4e321f69ba7312c310a59bde30c717[m
+Merge: 576409d 89975ce
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Jan 2 11:38:09 2024 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-raimon
+
+[33mcommit 89975ce36a167aa70823c69c5a34c7a1e857cb72[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Jan 2 11:35:33 2024 -0500
+
+    🐛 FIX page header link update
+
+[33mcommit 576409da10fc93d18277667c73ec0f09aaa9e24b[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Jan 2 11:34:51 2024 -0500
+
+    ✨ ADD consecutive date update
+
+[33mcommit 2376dafc9674440f8413b9e5c4ede30b8c3c9eaa[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Jan 2 10:54:26 2024 -0500
+
+    🚑 Critical update fix
+
+[33mcommit e31c23045adab245356e353156c87d6a9213121b[m
+Merge: 5d93576 25b73d9
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Tue Jan 2 15:34:56 2024 +0000
+
+    Merged in dev-raimon (pull request #105)
+    
+    🐛 FIX update links
+
+[33mcommit 25b73d9fdd3ea6c7651013b815dfc8a279bffd17[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Jan 2 10:33:47 2024 -0500
+
+    🐛 FIX update links
+
+[33mcommit 5d93576413120c281cc98ae76db1d7e7351ff951[m
+Merge: fb8eb9b 7e26ae2
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Tue Jan 2 15:03:26 2024 +0000
+
+    Merged in dev-raimon (pull request #104)
+    
+    Dev raimon
+
+[33mcommit 7e26ae2d39be9a3741113b65dd632aec4447cc07[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Jan 2 10:01:34 2024 -0500
+
+    🐛 FIX page version list
+
+[33mcommit fb8eb9bbea52dda88834ef6ae6444d8dee9abad5[m
+Merge: 9b8eabe e154c85
+Author: Daiber Vergel <dvergel@comercializadora-s3.com>
+Date:   Tue Jan 2 14:12:08 2024 +0000
+
+    Merged in dev-andres (pull request #103)
+    
+    new Item tags
+
+[33mcommit 1d78f4a694923f863a67f8155d760751aa938cc0[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Fri Dec 29 20:19:04 2023 -0500
+
+    🐛  FIX lista versions
+
+[33mcommit e154c85ef03dc3767c14c735cfca447145696e8c[m[33m ([m[1;31morigin/dev-andres[m[33m)[m
+Author: Andres DelaOssa <andres@comercializadora-s3.com>
+Date:   Fri Dec 29 17:58:50 2023 -0500
+
+    new Item tags
+
+[33mcommit 9b8eabefce7dc17399a2a581cad55e6179246b77[m
+Merge: 9267e63 3da94aa
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Fri Dec 29 17:49:17 2023 +0000
+
+    Merged in dev-raimon (pull request #102)
+    
+    🐛 FIX in list page version
+
+[33mcommit 3da94aabae648678a163d95850741549d1c57632[m
+Merge: e758c87 9267e63
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Fri Dec 29 12:48:33 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-raimon
+
+[33mcommit e758c877d72c7fa3037e77297cfbc72c49fb4cda[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Fri Dec 29 12:46:32 2023 -0500
+
+    🐛 FIX in list page version
+
+[33mcommit 9267e6347783c8f1d24ce11642ab5fd77c96f750[m
+Merge: b78bd4f 972af6d
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Dec 29 16:52:06 2023 +0000
+
+    Merged in sd-389 (pull request #100)
+    
+    Creation and configuration of pageNewsletterTagsBlock and edit newsItem
+    
+    Approved-by: Daiber Vergel
+
+[33mcommit b78bd4fa5a73d8cf1b68192ae2e1021839b0d64c[m
+Merge: 2a9731c d7bd384
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Dec 29 16:48:09 2023 +0000
+
+    Merged in sd-382 (pull request #95)
+    
+    Fix admin permissions
+    
+    Approved-by: CS3 Development
+
+[33mcommit 2a9731ce30807179628435973e4cc859f6d8d12b[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Fri Dec 29 11:23:22 2023 -0500
+
+    :sparkles: CHANGES in action clone page version
+
+[33mcommit 6d56a6c1ce9b0346bd258edf35c53ea3856b3266[m
+Merge: 9a756fc 03df7a3
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Fri Dec 29 16:21:06 2023 +0000
+
+    Merged in dev-raimon (pull request #99)
+    
+    :sparkles: Changes in action clone page version
+
+[33mcommit 03df7a3813fb23f829449c05aa1dbc84e96d4535[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Fri Dec 29 11:20:26 2023 -0500
+
+    :sparkles: Changes in action clone page version
+
+[33mcommit 9a756fc1d99c96470d5e221e09120f5f1c3289d5[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Fri Dec 29 11:09:52 2023 -0500
+
+    :sparkles: Changes in enum action clone version
+
+[33mcommit 31c85b277b5b7d8623b91aa88707078cfbb79e1b[m
+Merge: 330579d f6f364f
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Fri Dec 29 16:04:34 2023 +0000
+
+    Merged in dev-raimon (pull request #98)
+    
+    🐛 FIX enum action clone version
+
+[33mcommit f6f364f91c745888de2f09c3fc967f6881291958[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Fri Dec 29 11:03:57 2023 -0500
+
+    🐛 FIX enum action clone version
+
+[33mcommit d7bd384f700e461d0e5a185a3b2e75697e5b5873[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Dec 29 10:47:47 2023 -0500
+
+    Add pagelink resolve in the other items
+
+[33mcommit 972af6d2c1ffc04bb906595647d4e908173be743[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Dec 29 09:23:12 2023 -0500
+
+    Creation and configuration of pageNewsletterTagsBlock and edit newsItem
+
+[33mcommit 51cbc4fd4d82904caa6d165ae5338912629e5d7b[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Dec 28 16:23:08 2023 -0500
+
+    Add resolution of pageLinks in some entities
+
+[33mcommit 330579d5adf18cad3801e7a924cdf247a280f32d[m
+Merge: 16e56fe babe935
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Thu Dec 28 21:19:01 2023 +0000
+
+    Merged in dev-raimon (pull request #97)
+    
+    🐛 FIXED validation clone version
+
+[33mcommit babe935cff777c020d3153e37d25be143c4b8d4c[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Thu Dec 28 16:18:09 2023 -0500
+
+    🐛 FIXED validation clone version
+
+[33mcommit 16e56fe9e3bafb1063c81392fe4396bc5501a73a[m
+Merge: 18cd257 becbacf
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Thu Dec 28 20:46:50 2023 +0000
+
+    Merged in dev-raimon (pull request #96)
+    
+    🐛 FIXED Validate clone page version
+
+[33mcommit becbacf56f17f40b01551d2446da19eed01a7e50[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Thu Dec 28 15:46:01 2023 -0500
+
+    🐛 FIXED Validate clone page version
+
+[33mcommit 87db6e32de4d88a7a27df4dce8fad1ab4774db28[m
+Merge: 3e33213 18cd257
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Dec 28 09:54:03 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into sd-382
+
+[33mcommit 3e33213d120305a99fb192702cb2ba709db2ccc1[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Dec 28 09:43:53 2023 -0500
+
+    Fix admin permissions
+
+[33mcommit 18cd257d6b630d187069a99b1c1b718090474cdf[m
+Merge: e64a85a 288659f
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Thu Dec 28 14:38:15 2023 +0000
+
+    Merged in dev-raimon (pull request #94)
+    
+    Dev raimon
+
+[33mcommit e64a85a020b486c47a6caefb0b69514f47e9c831[m
+Author: Daiber Vergel <dvergel@comercializadora-s3.com>
+Date:   Thu Dec 28 08:43:53 2023 -0500
+
+    :fire: fixing link update
+
+[33mcommit 288659f1a224546dc7d9f8d0a6080b9ef475c039[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Thu Dec 28 01:11:55 2023 -0500
+
+    ✨ ADD pagination & filters in page version, modify mixin data service addying user find validacion (context)
+
+[33mcommit 9ea0e272871bc1a59599f86777ed43fffd46ac2a[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Wed Dec 27 14:22:55 2023 -0500
+
+    ✨ ADD page version query
+
+[33mcommit b646b0b0b7d58d8979c02b1d1357da2353a006c1[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Wed Dec 27 12:20:05 2023 -0500
+
+    :recycle: CHANGES in clone page
+
+[33mcommit 671ca32d77b2c5a2e7c931ec8678cf234f8bf39f[m
+Merge: e99aa6a ec352e4
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Dec 27 15:08:55 2023 +0000
+
+    Merged in sd-382 (pull request #92)
+    
+    Fix update linkItem services
+    
+    Approved-by: Daiber Vergel
+
+[33mcommit ec352e4bdba7c693481aa72dbfd34b5c6094dd54[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Dec 27 09:43:14 2023 -0500
+
+    Add option in enum
+
+[33mcommit e99aa6ad98ea30800b8ddd6edf262e031dba8479[m
+Merge: 2505df8 ca3e86a
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Wed Dec 27 05:11:37 2023 +0000
+
+    Merged in dev-raimon (pull request #93)
+    
+    Dev raimon
+
+[33mcommit ca3e86aed798061b9c08af6ad91162f2eb9bcaaa[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Wed Dec 27 00:10:19 2023 -0500
+
+    🐛 FIX validations in 'page block clone' & CHANGED 'validate clone version' for users
+
+[33mcommit 2ecf51926249aab00a85759c23808f55bf4aad45[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Dec 26 14:17:24 2023 -0500
+
+    Fix update linkItem services
+
+[33mcommit 7c6c9351e529b0ca4f9130a5c42bded985587d1b[m
+Merge: 7fe96a6 2505df8
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Dec 26 03:03:14 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-raimon
+
+[33mcommit 2505df8e9232488756d5f8fde519014cd460fe2a[m
+Merge: fe34a1a 5ec861f
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Tue Dec 26 08:02:56 2023 +0000
+
+    Merged in dev-ngonzales (pull request #91)
+    
+    Dev ngonzales
+
+[33mcommit 5ec861f23c26ca488e46264f6ec79940793d9103[m
+Merge: c9c474b fe34a1a
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Dec 26 03:02:18 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-ngonzales
+
+[33mcommit c9c474b738ed46c9097b72fe57b0824cbd1fb2c5[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Dec 26 02:57:31 2023 -0500
+
+    ✨ ADD version active in block updates
+
+[33mcommit 7fe96a6c26af9465a2555a9f0aee10867d00f841[m
+Merge: 7e0b625 fe34a1a
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Sun Dec 24 01:22:20 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-raimon
+
+[33mcommit 32c7f95d57964bd9a7f6762581259d141e16852c[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Sun Dec 24 01:21:47 2023 -0500
+
+    🐛 FIXED clone page
+
+[33mcommit fe34a1a4ea92fe06ea778a8fc2bbc42d512e6e7d[m
+Merge: bf8d22b 66aab61
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Sun Dec 24 04:32:01 2023 +0000
+
+    Merged in sd-382 (pull request #88)
+    
+    Add pageLink table
+    
+    Approved-by: CS3 Development
+
+[33mcommit 66aab61622bace355afcde37285353ecccabe6cc[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Dec 22 17:28:21 2023 -0500
+
+    add fields in header bar
+
+[33mcommit 87bc89489e8177217327f428ef007f38e118b23b[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Dec 22 16:50:57 2023 -0500
+
+    fix name govcolink
+
+[33mcommit 6e6c3b7c98d25884b3e2a9f155fa81e7f184fccd[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Dec 22 12:49:26 2023 -0500
+
+    Fix all items services
+
+[33mcommit 1dd4e152e8785747390db09a6cb6f490befa158b[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Dec 22 08:48:28 2023 -0500
+
+    Add new service config in slider items and header bar
+
+[33mcommit bf8d22b5c057caf50be1c69ea81358f3c7ba0024[m
+Merge: 95123e0 2dc34f1
+Author: Nicolas Gonzalez <ngonzalez@comercializadora-s3.com>
+Date:   Fri Dec 22 06:11:14 2023 +0000
+
+    Merged in SD-386 (pull request #89)
+    
+    OrderBy Added
+    
+    Approved-by: CS3 Development
+
+[33mcommit b85e1b5e6a6e28e4546edc323a01ab6b3cc2ec98[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Dec 21 18:20:16 2023 -0500
+
+    fix item service
+
+[33mcommit 0eda5bae56b40a30df6ae36851b4e7767af4ca3a[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Dec 21 15:52:21 2023 -0500
+
+    Add pagelink in header bar
+
+[33mcommit 7174b47babc318fb0cab583e97903c6bacf13c54[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Dec 21 12:40:00 2023 -0500
+
+    add pagelink in transparency
+
+[33mcommit d627d64ff5204470cd125bde8fa243e858676b81[m
+Merge: 36a5f9c c29a977
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Thu Dec 21 12:21:15 2023 -0500
+
+    Merge branch 'dev-ngonzales' of https://bitbucket.org/cs3dev/govco-backend into dev-ngonzales
+
+[33mcommit 36a5f9ce75c771edcda8f8c8bb15d0564a6b8c80[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Thu Dec 21 12:20:15 2023 -0500
+
+    🐛 CHANGED structure entities
+
+[33mcommit 2dc34f1cea989be6146a976014df50dc8ca0de0b[m[33m ([m[1;31morigin/SD-386[m[33m)[m
+Merge: 4c91572 95123e0
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Thu Dec 21 09:20:50 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into SD-386
+
+[33mcommit 4c915724174c793a6929dc4a31f63e369bc6ac03[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Thu Dec 21 09:20:35 2023 -0500
+
+    OrderBy Added
+
+[33mcommit 4952e1d4e1ba19b47a9120b863b1aa47c7fdf894[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Dec 20 19:33:04 2023 -0500
+
+    Add pagelink into items service
+
+[33mcommit 9dffa252ac15260c5781191f01f873c3d9447033[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Dec 20 16:40:49 2023 -0500
+
+    Add pageLink table
+
+[33mcommit c29a97753a2d7964f6c84ccd4d136fe2e83c2679[m
+Merge: 12b463e 95123e0
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Wed Dec 20 11:40:39 2023 -0500
+
+    Merge
+
+[33mcommit 12b463e786d9555e1adc631e2d3dbbc17cceb19c[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Wed Dec 20 11:22:32 2023 -0500
+
+    Add properties to clone page version
+
+[33mcommit 95123e0a4fbb4770453b8a114a25c6d4908241a0[m
+Merge: f002889 f5ea56e
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Dec 20 16:03:28 2023 +0000
+
+    Merged in sd-382 (pull request #87)
+    
+    Add colums in pageblock items
+    
+    Approved-by: Daiber Vergel
+
+[33mcommit 81e4378517f971edd6f3ccf639b74b114856b844[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Wed Dec 20 10:53:14 2023 -0500
+
+    🐛 FIXED clone page version
+
+[33mcommit f5ea56ecc740c15b542097296982f994aac4b5bd[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Dec 20 10:43:45 2023 -0500
+
+    Add colums in pageblock items
+
+[33mcommit f002889491f720a38ce32ab0764c62a90e952377[m
+Merge: 77b18b6 9e96f46
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Dec 20 15:22:29 2023 +0000
+
+    Merged in dev-luisb (pull request #86)
+    
+    Add global enum optional in pageblock about styles
+    
+    Approved-by: CS3 Development
+
+[33mcommit 9e96f46bcda3760b97605dbd25a61a71111264b3[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Dec 20 09:28:37 2023 -0500
+
+    Add global enum optional in pageblock about styles
+
+[33mcommit 77b18b6c2537ee4ca3c78619402a7cff7271bbc9[m
+Merge: 2c5e2b5 077c5e9
+Author: Nicolas Gonzalez <ngonzalez@comercializadora-s3.com>
+Date:   Wed Dec 20 13:42:38 2023 +0000
+
+    Merged in SD-386 (pull request #85)
+    
+    Change string to foreign key
+    
+    Approved-by: CS3 Development
+
+[33mcommit 2c5e2b5b8f1108ca5c04af34d32d58fd7df13344[m
+Merge: ca7198e db017b7
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Dec 20 13:20:51 2023 +0000
+
+    Merged in dev-luisb (pull request #84)
+    
+    add public findActive method in pageversion resolver
+    
+    Approved-by: CS3 Development
+
+[33mcommit 077c5e9ed36231f53026f8402cca96dbe107d519[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Tue Dec 19 18:05:25 2023 -0500
+
+    Change string to foreign key
+
+[33mcommit db017b75d03c2da4580e8bf4eff6b0b59ce29639[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Dec 19 18:03:07 2023 -0500
+
+    Transport style of slideritem to sliderblock and adding styles in footer block
+
+[33mcommit 683ff3166962d52be61d4e16f9c99c8672ea1471[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Dec 19 16:31:15 2023 -0500
+
+    Add enum stiles en slider item
+
+[33mcommit f8878112431cd11e68a2ceb61002e948a9b08ce4[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Dec 19 14:29:30 2023 -0500
+
+    Add active version in pages files
+
+[33mcommit 5e06615d53e161ad25fe4ce8ad5e83440eab5e14[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Dec 19 11:27:09 2023 -0500
+
+    add enum routetypes in pageblock items
+
+[33mcommit 055501e6c2d30bceae37fc05b69dcb68c866358c[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Dec 19 09:14:22 2023 -0500
+
+    add public findActive method in pageversion resolver
+
+[33mcommit ca7198ef35ddae40160aa0a672e4e05dee5e0bc6[m
+Merge: 76e0fbf 1f05824
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Mon Dec 18 19:04:04 2023 +0000
+
+    Merged in sd-367 (pull request #83)
+    
+    add theme field in pageversion
+    
+    Approved-by: CS3 Development
+
+[33mcommit 76e0fbfcea9b355624c69bd235d2f6456845cef0[m
+Merge: 7d146ee b283aa3
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Mon Dec 18 19:03:37 2023 +0000
+
+    Merged in sd-340 (pull request #82)
+    
+    add router enum in social block items
+    
+    Approved-by: CS3 Development
+
+[33mcommit 277cc9aa634bb2a8584c89ff0c7ecbf6e73b1d0d[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Mon Dec 18 12:16:55 2023 -0500
+
+    Add changes to clone page version
+
+[33mcommit 1f05824e3c6a53dedd4701b9979e9bbacd183a83[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Mon Dec 18 09:42:13 2023 -0500
+
+    Adjust enum theme
+
+[33mcommit 608c0a588e900ba4dd5754afd1d788156012b2a1[m
+Merge: 2cc3591 948a28e
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Sat Dec 16 11:31:39 2023 -0500
+
+    Merge branch 'dev-ngonzales' of https://bitbucket.org/cs3dev/govco-backend into dev-ngonzales
+
+[33mcommit 2cc3591846bad02a03320a85fa5993554b51c3f7[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Sat Dec 16 11:31:31 2023 -0500
+
+    🐛 FIXED clone version images
+
+[33mcommit 1b8d97960ff31725af37f30e6c9e412b07c8f693[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Sat Dec 16 11:24:11 2023 -0500
+
+    add theme field in pageversion
+
+[33mcommit b283aa30b34dc1c44eed966b5465b06b28af6839[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Sat Dec 16 09:36:11 2023 -0500
+
+    add router enum in social block items
+
+[33mcommit 948a28e953bb39c7043d880def678ec0eae14e93[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Fri Dec 15 16:49:04 2023 -0500
+
+    Temp fix pageClone
+
+[33mcommit d77340b4b7d3c36b57a916cd47249cdc2fc91485[m
+Merge: f333244 2b5a6df
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Fri Dec 15 12:34:17 2023 -0500
+
+    Merge branch 'SD-348' into dev-ngonzales
+
+[33mcommit f3332447e1d0e4115fbd78d130d8ac29e1363e80[m
+Merge: 5f08ca0 6934aa5
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Fri Dec 15 12:33:03 2023 -0500
+
+    Merge branch 'SD-348' of https://bitbucket.org/cs3dev/govco-backend into dev-ngonzales
+
+[33mcommit 2b5a6dfd7f50293d805c4fa60aa8de5570f1e8b8[m
+Merge: 603f606 7d146ee
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Fri Dec 15 12:32:39 2023 -0500
+
+    Merge
+
+[33mcommit 603f6060b19e88b31cede4a16ca9da87bd4e1d3e[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Fri Dec 15 12:30:16 2023 -0500
+
+    Fix type
+
+[33mcommit 7d146ee2a065fa9997d98fa9e836718f4041fcb9[m
+Merge: 084382c 49746a3
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Dec 14 19:26:40 2023 +0000
+
+    Merged in SD-337-servicio-para-carruseles (pull request #81)
+    
+    add field in slider item
+    
+    Approved-by: CS3 Development
+
+[33mcommit 084382c850158238a59124ea6fa5431ecf682c7c[m
+Merge: e65bb8f eae85e5
+Author: Nicolas Gonzalez <ngonzalez@comercializadora-s3.com>
+Date:   Thu Dec 14 19:26:06 2023 +0000
+
+    Merged in SD-352 (pull request #77)
+    
+    Add orderBy in pageVersion
+    
+    Approved-by: CS3 Development
+
+[33mcommit 49746a3fc4eec0a459eea5f5a37f9c7c2afd2180[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Dec 13 14:23:13 2023 -0500
+
+    add field in slider item
+
+[33mcommit e65bb8f25abdec0fa263cfc44dd7f38906bc0aea[m
+Merge: a7d3c8f e1df49a
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Dec 13 17:51:44 2023 +0000
+
+    Merged in sd-350 (pull request #79)
+    
+    Create document types table and requirements
+    
+    Approved-by: CS3 Development
+
+[33mcommit e1df49a08fbc1344ff15350f1808bba07cce7b91[m
+Merge: 064d4c5 cb18573
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Dec 13 17:51:13 2023 +0000
+
+    Merged in sd-336 (pull request #80)
+    
+    Sd 336
+    
+    Approved-by: CS3 Development
+
+[33mcommit cb18573821f8482b1f6bc8cae91029ef49935692[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Dec 13 12:23:07 2023 -0500
+
+    Adjust enum name
+
+[33mcommit 247472e3594b6b71cc09394a02158c2bce4b630d[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Dec 13 11:55:34 2023 -0500
+
+    add enum in footer
+
+[33mcommit 064d4c59000eea992b3382d00e1e7792ef127a12[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Dec 13 11:24:40 2023 -0500
+
+    Create document types table and requirements
+
+[33mcommit a7d3c8ffd1b50082558ff3b6ff6737f86c312e46[m
+Merge: 1fab36c 1d0fbaa
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Dec 13 00:19:19 2023 +0000
+
+    Merged in sd-350 (pull request #78)
+    
+    Sd 350
+    
+    Approved-by: CS3 Development
+
+[33mcommit 1d0fbaa39c356470f701ef93efde47288a78a2b7[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Dec 12 19:14:53 2023 -0500
+
+    ✨ADDED city and Department
+
+[33mcommit 6cefca0870d40aae61cb6a48a6b6486e6e32f400[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Dec 12 17:47:14 2023 -0500
+
+    Departamentos y municipios
+
+[33mcommit eae85e5b7c599529ef1d5d7f3c898557a011f16d[m[33m ([m[1;31morigin/SD-352[m[33m)[m
+Merge: 2fd262f 1fab36c
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Tue Dec 12 13:39:27 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into SD-352
+
+[33mcommit 2fd262f2abda782a5590ccdec239cccb6ac9aa45[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Tue Dec 12 13:39:11 2023 -0500
+
+    Add orderBy in pageVersion
+
+[33mcommit 4a97d0e4bf206efc97dab41d3d339148afbc61c4[m
+Merge: 7ec3da7 1fab36c
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Dec 12 12:16:16 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into sd-350
+
+[33mcommit 1fab36c9f83d80323c5fed9c2de73b478fbbef81[m
+Merge: 37118b8 27a9de0
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Dec 12 17:14:25 2023 +0000
+
+    Merged in sd-186 (pull request #76)
+    
+    Adjust corporate logos in footer
+    
+    Approved-by: CS3 Development
+
+[33mcommit 37118b8de813ce7736f23d19436888c35495dcc3[m
+Merge: 0a0b547 6934aa5
+Author: Nicolas Gonzalez <ngonzalez@comercializadora-s3.com>
+Date:   Tue Dec 12 17:14:12 2023 +0000
+
+    Merged in SD-348 (pull request #75)
+    
+    Add fullName field
+    
+    Approved-by: CS3 Development
+
+[33mcommit 0a0b547840799fb8ed6dda4050ae6d3beb2899bb[m
+Merge: 63b0410 83684e6
+Author: Nicolas Gonzalez <ngonzalez@comercializadora-s3.com>
+Date:   Tue Dec 12 17:13:56 2023 +0000
+
+    Merged in SD-347 (pull request #74)
+    
+    Delete field firstName
+    
+    Approved-by: CS3 Development
+
+[33mcommit 27a9de035cee1c1f22ee3747d0bdfd0a978d5e62[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Dec 12 12:11:06 2023 -0500
+
+    Adjust corporate logos in footer
+
+[33mcommit 7ec3da703e1a5dbf143eb327087686c7739a2214[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Dec 12 09:12:19 2023 -0500
+
+    Partial departaments table
+
+[33mcommit 6934aa50ed27801a3fe8dfbe7b9df7f23d7a1eae[m[33m ([m[1;31morigin/SD-348[m[33m)[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Mon Dec 11 11:41:44 2023 -0500
+
+    Add fullName field
+
+[33mcommit 83684e6467fc53c2eb9c00cc4519a04bd11f48e0[m[33m ([m[1;31morigin/SD-347[m[33m)[m
+Merge: 5f08ca0 63b0410
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Mon Dec 11 11:17:07 2023 -0500
+
+    Merge branch 'SD-347' of https://bitbucket.org/cs3dev/govco-backend into SD-347
+
+[33mcommit 5f08ca0651e51f469df80a37cf6f3c6721bd7195[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Mon Dec 11 11:02:39 2023 -0500
+
+    Delete field firstName
+
+[33mcommit 63b041038cf52824625dd977c63cf9852aedd036[m
+Merge: 116b9ce a11f2ec
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Dec 7 22:08:22 2023 +0000
+
+    Merged in dev-luisb (pull request #73)
+    
+    Dev luisb
+    
+    Approved-by: CS3 Development
+
+[33mcommit a11f2eccdb6b06b68240cf250111291b54d4f217[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Dec 7 17:02:31 2023 -0500
+
+    Recreate attention lines block - attention lines block item
+
+[33mcommit 804496c5c5ea600400fff0618d9dc308d0360ff4[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Dec 7 15:15:25 2023 -0500
+
+    Delete page attention lines
+
+[33mcommit 116b9ce020ecc1af82f27439f3768b9fa5716cf6[m
+Merge: 04c56f2 456f938
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Dec 7 06:11:00 2023 +0000
+
+    Merged in sd-234 (pull request #72)
+    
+    Adding documentation about page block with two page block items
+
+[33mcommit 456f938d47371fcc694e3048fb722c0f426c5384[m[33m ([m[1;31morigin/sd-234[m[33m)[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Dec 6 16:46:07 2023 -0500
+
+    Adding documentation about page block with two page block items
+
+[33mcommit 04c56f2dc244852aad9a5742d55ff1abb981e38a[m
+Merge: eeecb26 f416433
+Author: Nicolas Gonzalez <ngonzalez@comercializadora-s3.com>
+Date:   Wed Dec 6 02:37:01 2023 +0000
+
+    Merged in dev-ngonzales (pull request #69)
+    
+    Dev ngonzales
+    
+    Approved-by: CS3 Development
+
+[33mcommit eeecb263be3a581c29ebaae6002976c2d48930b5[m
+Merge: ea7d977 74fe333
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Dec 5 22:25:26 2023 +0000
+
+    Merged in sd-188 (pull request #71)
+    
+    add route in right item
+    
+    Approved-by: CS3 Development
+
+[33mcommit ea7d977c99caa88e2363604753090afd81b2cf4c[m
+Merge: 4c6785b 4272f38
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Dec 5 22:25:02 2023 +0000
+
+    Merged in sd-66 (pull request #70)
+    
+    Adding requirements for embed link in transparency and fix detail in social network left item
+    
+    Approved-by: CS3 Development
+
+[33mcommit 74fe333316819ad8c66f298f6e95747bb216bd18[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Dec 5 12:55:14 2023 -0500
+
+    add route in right item
+
+[33mcommit 4272f3805c2998d95e6ae2b8475da91e89d2daf0[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Dec 5 11:38:20 2023 -0500
+
+    Adding requirements for embed link in transparency and fix detail in social network left item
+
+[33mcommit f416433b76c5d9dbe22be26351a7fd49478ad8a7[m
+Merge: 257864f 4c6785b
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Tue Dec 5 09:01:09 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-ngonzales
+
+[33mcommit 257864f7f6a3a3e0c939790e11de980753161476[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Tue Dec 5 09:00:51 2023 -0500
+
+    Added pagination in pageVersion
+
+[33mcommit 4c6785bd1277ffecaedef58047e391df39057202[m
+Merge: fd81704 42814a5
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Dec 5 03:02:56 2023 +0000
+
+    Merged in sd-247 (pull request #68)
+    
+    Adjust fields in footer block/footer block item
+    
+    Approved-by: CS3 Development
+
+[33mcommit 42814a52abf3d60451a4027bc295a10d1fe73dea[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Mon Dec 4 14:53:54 2023 -0500
+
+    Adjust fields in footer block/footer block item
+
+[33mcommit 7e0b62593b04af4d1106d1fe3304bc305714d18d[m
+Merge: 51cda8c fd81704
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Mon Dec 4 14:30:34 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-raimon
+
+[33mcommit fd817044def2f581805423d711b2c3c294e12406[m
+Merge: 0235bc6 54a9ce2
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Mon Dec 4 19:19:52 2023 +0000
+
+    Merged in sd-188 (pull request #66)
+    
+    Sd 188
+    
+    Approved-by: CS3 Development
+
+[33mcommit 0235bc6ba64d69fa588daa97e0d2e52f56195bb0[m
+Merge: bbcb5ba 8a26c6c
+Author: Nicolas Gonzalez <ngonzalez@comercializadora-s3.com>
+Date:   Mon Dec 4 19:14:53 2023 +0000
+
+    Merged in dev-ngonzales (pull request #67)
+    
+    Dev ngonzales
+    
+    Approved-by: CS3 Development
+
+[33mcommit bbcb5ba78bc1fbcb87171a4551c589b1405d291d[m
+Merge: e4b4646 c718513
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Mon Dec 4 19:10:03 2023 +0000
+
+    Merged in sd-66 (pull request #64)
+    
+    Fix bug in pageTransparencyBlock
+    
+    Approved-by: CS3 Development
+
+[33mcommit c2ff96fa288b0510594f802bf026f44998705622[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Mon Dec 4 11:44:59 2023 -0500
+
+    FirstName is replaced by name and marked as deprecated
+
+[33mcommit 8a26c6c1b815c12cc969f6ae3f737c5de2eca632[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Mon Dec 4 10:18:31 2023 -0500
+
+    Changes in code validation
+
+[33mcommit 54a9ce2efc31416dc13c0b0a3022b56f97f394be[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Mon Dec 4 10:02:03 2023 -0500
+
+    adding config for many details into social networks block
+
+[33mcommit ab5b3a6e4a4f6070cbfbc361717479b953f3e5b2[m
+Merge: 5e95398 e4b4646
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Mon Dec 4 08:39:33 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-ngonzales
+
+[33mcommit 5e95398d694578a61cec1faa58f64efb7db65659[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Mon Dec 4 08:39:19 2023 -0500
+
+    Added pageVersion activation service
+
+[33mcommit 6552aedc8dc0bf1bdd640909ba8735879d9be2cd[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Sat Dec 2 13:12:02 2023 -0500
+
+    Sort page versions
+
+[33mcommit a85b706f12ac32237d54acc27ef5ab1397385de0[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Sat Dec 2 11:53:11 2023 -0500
+
+    Added pageBlock validation
+
+[33mcommit c7185135119e3fdc30dc3f290ef8dd598ff26548[m
+Merge: dd047f7 38ec42e
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Sat Dec 2 10:43:31 2023 -0500
+
+    Merge branch 'dev-luisb' of https://bitbucket.org/cs3dev/govco-backend into sd-66
+
+[33mcommit 8c4797a26f0d039ba4a424d453155180e9c474a9[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Sat Dec 2 10:37:19 2023 -0500
+
+    adding in respective modules to social block
+
+[33mcommit e4b464655779132f19db9996222f53b86328979a[m
+Merge: a60ca2a 4dad969
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Dec 1 23:18:02 2023 +0000
+
+    Merged in sd-121 (pull request #62)
+    
+    Transport boolean field of autenthication to header bar
+    
+    Approved-by: CS3 Development
+
+[33mcommit 51cda8cdf8ad6d598ede46f1cf1a2bb1ec7a0054[m
+Merge: 99cc57a a60ca2a
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Fri Dec 1 18:16:49 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-raimon
+
+[33mcommit f2fb6c0553730b20d488a0393f630dfdc71fd08c[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Dec 1 18:09:07 2023 -0500
+
+    Config social networks block and  ur items
+
+[33mcommit 38ec42e757b7a8f25c2e462a946c7e69e68a449a[m
+Merge: ac9e645 a60ca2a
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Fri Dec 1 17:34:23 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-luisb
+
+[33mcommit ac9e645d9fcab1ce18e67ace088a8199b56a315f[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Fri Dec 1 17:30:33 2023 -0500
+
+    Fix bug in pageTransparencyBlock
+
+[33mcommit a60ca2adecfb91b7afc4841da29547302bdf1270[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Fri Dec 1 16:20:44 2023 -0500
+
+    🐛 Changed Type Mutation SignInAdmin
+
+[33mcommit 99cc57a77604838eab3a283848b06312a83ff175[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Fri Dec 1 16:19:14 2023 -0500
+
+    🐛 Changes Type Mutation SignInAdmin
+
+[33mcommit 4dad969ef9e29a1ce9766e4a64e08555347c9a6f[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Dec 1 12:29:39 2023 -0500
+
+    Transport boolean field of autenthication to header bar
+
+[33mcommit dd047f7d666696e99bba6bbec5d4e21dfcfd2678[m
+Merge: cc5ca64 9f6fb10
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Dec 1 10:50:18 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into sd-66
+
+[33mcommit 9f6fb10f40cca3e7ac5160b5afb292d6c4e56ed4[m
+Merge: 3adc059 3b92f44
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Dec 1 15:29:50 2023 +0000
+
+    Merged in sd-66 (pull request #61)
+    
+    assign fields of transparency of nullables
+    
+    Approved-by: CS3 Development
+
+[33mcommit 3adc05913c86b89fb2ef31a652eecbc018eb7b86[m
+Merge: 0bf89ad f4cc544
+Author: Nicolas Gonzalez <ngonzalez@comercializadora-s3.com>
+Date:   Fri Dec 1 14:32:10 2023 +0000
+
+    Merged in dev-ngonzales (pull request #58)
+    
+    Fix two-step authentication
+    
+    Approved-by: CS3 Development
+
+[33mcommit cc5ca64cb70b00ce672189f7f0ccce006a757cd8[m
+Merge: 3b92f44 0bf89ad
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Dec 1 09:01:29 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into sd-66
+
+[33mcommit 3b92f44048f03804c60644b6195f73d244da50d1[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Dec 1 08:53:02 2023 -0500
+
+    assign fields of transparency of nullables
+
+[33mcommit 0bf89ade46efddf539f2219ff50ef4fca8fe9d5b[m
+Merge: 8c027ce 18f9452
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Dec 1 00:14:32 2023 +0000
+
+    Merged in sd-66 (pull request #60)
+    
+    add nullable searchbar
+    
+    Approved-by: CS3 Development
+
+[33mcommit 18f94524ba486324730ecd31a3853e9b467c64d1[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Nov 30 19:12:56 2023 -0500
+
+    add nullable searchbar
+
+[33mcommit 8c027cea22a7a28b5496a7e88b2661c146137c6e[m
+Merge: 763a552 943c95e
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Nov 30 23:54:41 2023 +0000
+
+    Merged in sd-66 (pull request #59)
+    
+    Sd 66
+    
+    Approved-by: CS3 Development
+
+[33mcommit ca6a653f193e43fd8bb5d5cc2958ff98331d70c5[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Thu Nov 30 18:01:36 2023 -0500
+
+    ✨ Connected suscription to create notification group
+
+[33mcommit 943c95e7a56fdcfd99599deaf2b1bcc7a4c19370[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Nov 30 17:54:05 2023 -0500
+
+    error
+
+[33mcommit 820414116eb42e61cc352bdb2dc351c07d51fe16[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Nov 30 16:33:13 2023 -0500
+
+    Adding second item configuration
+
+[33mcommit f4cc544faefeca814d8ab291dd937b590cdfbbe3[m
+Merge: cddab66 763a552
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Thu Nov 30 16:28:42 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-ngonzales
+
+[33mcommit cddab66d9b21466301535bac1638ae23dfa927f3[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Thu Nov 30 16:28:24 2023 -0500
+
+    Fix two-step authentication
+
+[33mcommit 763a5526c5fcb5136f1c735270cdc4da92b8ff54[m
+Merge: 2028d33 232c8c4
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Nov 30 19:06:45 2023 +0000
+
+    Merged in sd-237 (pull request #57)
+    
+    Adding conditional for activate function if appears id image
+    
+    Approved-by: CS3 Development
+
+[33mcommit 232c8c4f520231adfa1bd616eb24da1e9f73c94f[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Nov 30 11:47:08 2023 -0500
+
+    Adding conditional for activate function if appears id image
+
+[33mcommit 2028d3363cf612a662c77cb3410f73d20887befe[m
+Merge: 0ecd20b d69f0e8
+Author: Nicolas Gonzalez <ngonzalez@comercializadora-s3.com>
+Date:   Wed Nov 29 19:05:15 2023 +0000
+
+    Merged in dev-ngonzales (pull request #56)
+    
+    Fix problems PR and add services to send code
+    
+    Approved-by: CS3 Development
+
+[33mcommit 0ecd20b1d5a0f2ee7ef96b2f14273b9f6b840451[m
+Merge: f3fa681 b7aa28d
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Nov 29 19:04:43 2023 +0000
+
+    Merged in sd-239 (pull request #55)
+    
+    Adjust date field in string
+    
+    Approved-by: CS3 Development
+
+[33mcommit d69f0e838eb518f5adc6a05e939258283dc97abf[m
+Merge: 4b9e934 f3fa681
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Wed Nov 29 12:03:34 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-ngonzales
+
+[33mcommit 4b9e934fd3dcabdc26a8a1add6b2e14f1b4acffa[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Wed Nov 29 12:03:21 2023 -0500
+
+    Fix problems PR and add services to send code
+
+[33mcommit b7aa28d1cf4030a4af608c0cdd0729248de01ff3[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Nov 29 10:56:23 2023 -0500
+
+    Adjust date field in string
+
+[33mcommit 11c01ab6c87fc882ccea0d7c553cb4d58041e0b2[m
+Merge: 43aa0db f3fa681
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Nov 28 19:55:01 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-raimon
+
+[33mcommit 43aa0db75cb21f7186d8596bdf765e5f3ef007ed[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Nov 28 19:54:43 2023 -0500
+
+    ✨ Suscription V 0.2
+
+[33mcommit 9784abe9421aaf90e048ce7564e24191217a31e4[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Nov 28 19:54:17 2023 -0500
+
+    ✨ Suscription V0.2
+
+[33mcommit f3fa6816b787bdf6b7b2e0fba33daf434b8f1f2a[m
+Merge: 0ef754f bd086e9
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Nov 29 00:33:33 2023 +0000
+
+    Merged in sd-244 (pull request #54)
+    
+    Add corporateLogos block / corporationLogos item
+    
+    Approved-by: CS3 Development
+
+[33mcommit 0ef754f2287be0bcdce8885feb3436ce5ff9b069[m
+Merge: 77e1f72 4def899
+Author: Nicolas Gonzalez <ngonzalez@comercializadora-s3.com>
+Date:   Wed Nov 29 00:26:30 2023 +0000
+
+    Merged in dev-ngonzales (pull request #53)
+    
+    Dev ngonzales
+    
+    Approved-by: CS3 Development
+
+[33mcommit 77e1f727d8af505c82be3240ed880ac4575e69a6[m
+Merge: 8262b0c 60281f9
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Nov 29 00:05:38 2023 +0000
+
+    Merged in sd-187 (pull request #51)
+    
+    Fix nav item element, now is nullable
+    
+    Approved-by: CS3 Development
+
+[33mcommit bd086e92aa4ff230154ac8a9447be8b162bac4f5[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Nov 28 17:49:25 2023 -0500
+
+    Add corporateLogos block / corporationLogos item
+
+[33mcommit 4def899250f38743371809924710b1391d4c659b[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Tue Nov 28 15:27:17 2023 -0500
+
+    Test examples are added
+
+[33mcommit 1249c5a79fc9e8fac0cab32e71646a8b542839df[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Tue Nov 28 13:18:59 2023 -0500
+
+    Fix problems to send codes
+
+[33mcommit bfd16c96d7411c0f367823d8101fadd4f7c624d8[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Nov 28 13:00:36 2023 -0500
+
+    🐛 FIXED notifications service
+
+[33mcommit 35224d55da08601a91451904deb8ef7632fe4db6[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Nov 28 12:24:30 2023 -0500
+
+    ✨ Begin Suscriptions
+
+[33mcommit cbb4673cb2ec3a6a1dc4ed3464ec340e3e309ffd[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Tue Nov 28 12:00:07 2023 -0500
+
+    Fix permissions in services
+
+[33mcommit 690cf604e4722629a2ae8b69f0c597b6168fc033[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Mon Nov 27 22:58:33 2023 -0500
+
+    Add changes in JWT
+
+[33mcommit 94aee73a429571445b15ef0e0c65dcd09e9c84c0[m
+Merge: 3b841bd 8262b0c
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Mon Nov 27 17:10:52 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-ngonzales
+
+[33mcommit 3b841bd216c0d294dec6ab07159ceccb246fa0e0[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Mon Nov 27 17:10:42 2023 -0500
+
+    Create notification to approve jwt
+
+[33mcommit 4dda855e5485357f8f0407885151b2f60f4f927d[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Mon Nov 27 14:43:05 2023 -0500
+
+    Add update user and password
+
+[33mcommit 60281f91316812263144deb1d388ca6dd4dcedd7[m[33m ([m[1;31morigin/sd-187[m[33m)[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Mon Nov 27 10:33:52 2023 -0500
+
+    Fix nav item element, now is nullable
+
+[33mcommit 8262b0c62ce4e9d4ae2534ecb6a7734e97ac65e9[m
+Merge: 1eb036a 6cca313
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Mon Nov 27 14:45:58 2023 +0000
+
+    Merged in dev-raimon (pull request #50)
+    
+    ✨ Changes in Notifications, throw errors & Groups
+
+[33mcommit 1eb036a098fcbdde9ddc158cc0b7d45bf133086e[m
+Merge: 33623f9 55a9e72
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Mon Nov 27 14:45:33 2023 +0000
+
+    Merged in sd-187 (pull request #49)
+    
+    Adjust and adding fields in event block/eventitem
+    
+    Approved-by: CS3 Development
+
+[33mcommit 6cca3130e1d77fc74998273ddbbfcef51015cefe[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Mon Nov 27 09:40:23 2023 -0500
+
+    ✨ Changes in Notifications, throw errors & Groups
+
+[33mcommit 55a9e72f6887c99073f2cec7aa1490fda87d65cd[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Mon Nov 27 08:42:02 2023 -0500
+
+    Adjust header bar and authentication bar
+
+[33mcommit ec6cdbc7df51a9e91c440b18bb404e2bfb859808[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Sat Nov 25 10:57:22 2023 -0500
+
+    Adjust and adding fields in event block/eventitem
+
+[33mcommit 33623f9a9c15997a68b9e3fc67da74e1c4018099[m
+Merge: 51849ca 5aa9d77
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Sat Nov 25 15:14:10 2023 +0000
+
+    Merged in dev-raimon (pull request #48)
+    
+    🐛 Added profile module to wss
+
+[33mcommit 5aa9d77231503e1d5df8af28ab932584929ffdd4[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Sat Nov 25 10:13:40 2023 -0500
+
+    🐛 Added profile module to wss
+
+[33mcommit 51849cabe041ba91fcb48b8fe9a8fdf369b20baf[m
+Merge: 0c6a33c 55f583d
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Sat Nov 25 15:07:59 2023 +0000
+
+    Merged in dev-raimon (pull request #47)
+    
+    Dev raimon
+
+[33mcommit 0c6a33c9bf4a3ae0bd93eb581143402ffc5623dd[m
+Merge: 4dfe873 76d6a04
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Sat Nov 25 15:07:34 2023 +0000
+
+    Merged in sd-187 (pull request #46)
+    
+    Adding fields and configuration into footer bar / footer item
+    
+    Approved-by: CS3 Development
+
+[33mcommit 55f583d6f504db917cf028d22fa524cd2d684f7a[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Sat Nov 25 09:40:20 2023 -0500
+
+    ♻️ ✨ Added y Changes:
+    - Added notifications module and unified notifications processes.
+    - Modifications in error handling and error conversion interceptor to GraphQLError.
+    - Restructuring of general paging service to return required metadata.
+    - Added queuing system to Redis notification and management service.
+    - Notification service documentation.
+
+[33mcommit 76d6a04409207ff2a80a3508bcc7a43260662abd[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Nov 24 08:58:40 2023 -0500
+
+    Adding fields and configuration into footer bar / footer item
+
+[33mcommit 4dfe87342561be7d86d1eda8f84dd948f856a13b[m
+Merge: 2bcfec3 7c2c62a
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Nov 23 19:01:23 2023 +0000
+
+    Merged in sd-186 (pull request #45)
+    
+    Change link of interest bar of footer to main
+    
+    Approved-by: CS3 Development
+
+[33mcommit 7c2c62a7e103479c0e2c39c5172cc470e6ff887b[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Nov 23 11:53:10 2023 -0500
+
+    adjust header bar service for catch admin images
+
+[33mcommit cca3be4271b70485592d8bbcff415bb1c80b6302[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Nov 23 10:14:22 2023 -0500
+
+    Change link of interest bar of footer to main
+
+[33mcommit 4b75b1818ffed144ffa44b85cc26fe47ffed11c3[m
+Merge: a761e25 2bcfec3
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Thu Nov 23 07:51:10 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-raimon
+
+[33mcommit 2bcfec31180a7ae5f2f022f5f620f7a2366be7af[m
+Merge: c5674e2 68b7574
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Nov 23 04:23:52 2023 +0000
+
+    Merged in sd-181 (pull request #44)
+    
+    Fix navigation bar and after create image into entities
+    
+    Approved-by: CS3 Development
+
+[33mcommit 68b75740b1625fdaf6b3a5636a467d62d69206b9[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Nov 22 17:31:22 2023 -0500
+
+    transform date field in procedure to nullable in graphql
+
+[33mcommit c60bddb28cee2c2febab2ed21ff2dfa7019facc2[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Nov 22 15:33:03 2023 -0500
+
+    Adding download text into regulaions
+
+[33mcommit 4df39f6b89a6976dd862a0cea79f2d30145ccc94[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Nov 22 15:17:01 2023 -0500
+
+    Adjust time utc -5 in production command
+
+[33mcommit 05cf4f54481b0801c078409ad2a1d8f110122e03[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Nov 22 12:50:39 2023 -0500
+
+    Fix navigation bar and after create image into entities
+
+[33mcommit a761e25573b2a06837ac30a5f9fc18c1529699f1[m
+Merge: 8e3212e c5674e2
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Nov 21 23:21:23 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-raimon
+
+[33mcommit c5674e2b2696027f950a93cf3f34da9fbc57b282[m
+Merge: bc7cfaf 007d340
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Nov 22 02:50:12 2023 +0000
+
+    Merged in sd-186 (pull request #43)
+    
+    Adding new fields in link of interest bar and fix service
+    
+    Approved-by: CS3 Development
+
+[33mcommit bc7cfaf1e09a3e7315c1dcaaa74974706734ef82[m
+Merge: 69f6b61 db9c40c
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Nov 21 22:44:39 2023 +0000
+
+    Merged in dev-luisb (pull request #42)
+    
+    Leave the navigation item as at the beginning
+    
+    Approved-by: CS3 Development
+
+[33mcommit 007d340fe3a9b3859429fefe90cb270b9a11d27a[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Nov 21 17:39:32 2023 -0500
+
+    Adding new fields in link of interest bar and fix service
+
+[33mcommit db9c40c33bc4b3a9cf57bbb0f9f6ca21c873ef22[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Nov 21 15:06:13 2023 -0500
+
+    Leave the navigation item as at the beginning
+
+[33mcommit 69f6b610f2340e33ab684f39a773ebd1ab398480[m
+Merge: 760ab04 62bf537
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Nov 21 19:10:26 2023 +0000
+
+    Merged in dev-luisb (pull request #41)
+    
+    Adding location parametres into event item
+    
+    Approved-by: CS3 Development
+
+[33mcommit 62bf537f82f3784ae9ca3bde3588a74fded6a419[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Mon Nov 20 17:21:02 2023 -0500
+
+    Delete navigation requirements
+
+[33mcommit 7358d4aec509d70cf7bd830f3106632059a7077d[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Mon Nov 20 17:17:39 2023 -0500
+
+    delete sub item option
+
+[33mcommit 5e96e654f9e4a98013d562707e47fdd82bcf866e[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Mon Nov 20 17:08:02 2023 -0500
+
+    Adding geolocations structure and local description
+
+[33mcommit dd0ce69282f3f3a8d7652d0bec336c4cfc534452[m
+Merge: 59879a4 760ab04
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Mon Nov 20 14:34:50 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-luisb
+
+[33mcommit 59879a43a6112642b0449bc6d8b4ca480c0ca7e1[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Mon Nov 20 11:17:22 2023 -0500
+
+    Esta es una prueba - no hacer pr de ella
+
+[33mcommit 8e3212e053d463d3250738a33f71df8810c9851a[m
+Merge: 54ef505 760ab04
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Sun Nov 19 16:58:33 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-raimon
+
+[33mcommit 760ab04e33d1948906d399f1aebb8f6c735324eb[m
+Merge: 391e596 eca5968
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Sat Nov 18 17:23:11 2023 +0000
+
+    Merged in dev-luisb (pull request #40)
+    
+    add default value in procedure.duration
+    
+    Approved-by: CS3 Development
+
+[33mcommit eca59685618c57457df684ad1196d358bcc11a85[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Sat Nov 18 12:21:32 2023 -0500
+
+    add default value in procedure.duration
+
+[33mcommit 391e59683269a812dfbeb62b4266a0c812e4f47b[m
+Merge: b510e89 5ccd955
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Sat Nov 18 17:17:25 2023 +0000
+
+    Merged in dev-luisb (pull request #39)
+    
+    Dev luisb
+    
+    Approved-by: CS3 Development
+
+[33mcommit 5ccd9557a828cb5523b03feeae9db5987ca91edb[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Sat Nov 18 12:10:25 2023 -0500
+
+    Adding neew field in header bar other logo
+
+[33mcommit 54ef5051f1459902a0c00c5d19203de07823eb91[m
+Merge: 03c37ec b510e89
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Fri Nov 17 19:21:12 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-raimon
+
+[33mcommit 3076e155cc13191b4feae7bd2888ce0b020b491d[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Nov 17 15:02:44 2023 -0500
+
+    Addign personalized enum into procedures
+
+[33mcommit b510e894d651b0a7bca86a3d9151cd6a43bd0f2c[m
+Merge: 8bb8e9b 760ea86
+Author: Nicolas Gonzalez <ngonzalez@comercializadora-s3.com>
+Date:   Fri Nov 17 13:46:09 2023 +0000
+
+    Merged in dev-ngonzales (pull request #38)
+    
+    Login for Admins
+    
+    Approved-by: CS3 Development
+
+[33mcommit 8bb8e9b394cea226ae2e086971a0597b674ca851[m
+Merge: 8cb7276 2fd7267
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Nov 17 13:45:25 2023 +0000
+
+    Merged in dev-luisb (pull request #37)
+    
+    Dev luisb
+    
+    Approved-by: CS3 Development
+
+[33mcommit 2fd726799c09ae1439150cfec3826b103c7b3b11[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Nov 16 17:01:33 2023 -0500
+
+    Adding fields default values into event content
+
+[33mcommit 9f89e43dfe95744fe4a7c4dffbedbe666bdf8a18[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Nov 16 15:55:14 2023 -0500
+
+    Fix time to UTC-5 and delete lines into navigation item service
+
+[33mcommit 15a5b57f48804fe07bc40a9c613612f7e9dd755b[m
+Merge: 8a48476 8cb7276
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Nov 16 14:39:37 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-luisb
+
+[33mcommit 760ea86c03a0c69a6e70cedbd2ab2b75ce4b3444[m
+Merge: c2c92b9 8cb7276
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Thu Nov 16 11:47:49 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-ngonzales
+
+[33mcommit c2c92b9c47f43d986beea81415dc30f475a5dcc3[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Thu Nov 16 11:47:39 2023 -0500
+
+    Login for Admins
+
+[33mcommit 8a48476580924adadef10d6aba1581d386ac2456[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Nov 15 15:09:35 2023 -0500
+
+    adding new configuration into navigation block/item
+
+[33mcommit 8cb72766c424ea4a5b576438ea71599822f7aca9[m
+Merge: e0906fc 84a0d46
+Author: Nicolas Gonzalez <ngonzalez@comercializadora-s3.com>
+Date:   Wed Nov 15 19:18:31 2023 +0000
+
+    Merged in dev-ngonzales (pull request #36)
+    
+    Corrections in roles and functionalities
+    
+    Approved-by: CS3 Development
+
+[33mcommit 26e6d56e5ea98e5556963b3e710b379258645074[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Nov 15 09:56:14 2023 -0500
+
+    transform navigation bar of content to config configuration
+
+[33mcommit 84a0d4657c8d59e0ceb64bfca4fbcf645a1a59e4[m
+Merge: 121f09a e0906fc
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Wed Nov 15 08:16:59 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-ngonzales
+
+[33mcommit 121f09a91b2340ba7bb7c4ae82a66f1096466005[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Wed Nov 15 08:16:46 2023 -0500
+
+    Corrections in roles and functionalities
+
+[33mcommit e0906fc3c0bd8a7e802d06095be1e02afaa21da3[m
+Merge: 0e12289 52be0f7
+Author: Nicolas Gonzalez <ngonzalez@comercializadora-s3.com>
+Date:   Wed Nov 15 00:16:44 2023 +0000
+
+    Merged in dev-ngonzales (pull request #35)
+    
+    Dev ngonzales
+    
+    Approved-by: Raimon Koudsi
+
+[33mcommit 0e122893876b5c5d290face59449e030241fff6c[m
+Merge: 73db878 541656d
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Mon Nov 13 22:16:22 2023 +0000
+
+    Merged in dev-luisb (pull request #34)
+    
+    Dev luisb
+    
+    Approved-by: Raimon Koudsi
+
+[33mcommit 03c37ec546d0378fc52ec194c30c44514ac2c8b9[m
+Merge: b614578 73db878
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Mon Nov 13 00:34:59 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-raimon
+
+[33mcommit b6145781b80f938223c5d827b19df839f01ea1c3[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Mon Nov 13 00:34:12 2023 -0500
+
+    ♻️ Refactor email module
+
+[33mcommit 541656d0e5d79387a046f03170822315ee52d02b[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Sat Nov 11 12:17:07 2023 -0500
+
+    fix block items and imports into footer bar
+
+[33mcommit 52be0f7de319dd9df05a6a2fd9309f0fc8902bef[m
+Merge: 3e2483b 73db878
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Sat Nov 11 11:49:59 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-ngonzales
+
+[33mcommit 3e2483b87216b49b0ff3982e07cc22c12077a088[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Sat Nov 11 11:49:18 2023 -0500
+
+    Creation of permissions and Guard
+
+[33mcommit 4cd509423ce6f5cc91f76ebc624bacb7807769b6[m
+Author: Andres DelaOssa <andres@comercializadora-s3.com>
+Date:   Sat Nov 11 10:49:04 2023 -0500
+
+    fix PageTaxesItem null error
+
+[33mcommit 946070b1cdc824f320e1727e9cffb9bfa6fa8a27[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Nov 10 17:36:22 2023 -0500
+
+    Delete block items
+
+[33mcommit 4c31900a8bb6207bd6730ba0bf492519b099ff89[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Nov 10 16:50:23 2023 -0500
+
+    Adding fields of  eventblockitem to event item and resolver async names
+
+[33mcommit 77618b35d5df5bbe6088d577bee314c330554745[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Fri Nov 10 08:50:41 2023 -0500
+
+    Create sec_userrole table
+
+[33mcommit 73db878ae54fd07739914bd11579e789ea8eb0f1[m
+Merge: 70fdb05 3e3348a
+Author: Nicolas Gonzalez <ngonzalez@comercializadora-s3.com>
+Date:   Thu Nov 9 20:01:22 2023 +0000
+
+    Merged in dev-ngonzales (pull request #33)
+    
+    Delete console.error and the logic notifications is moving
+    
+    Approved-by: CS3 Development
+
+[33mcommit 3e3348aa73e97b4e55e834f70e492c50d9ed05f8[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Thu Nov 9 12:40:19 2023 -0500
+
+    Delete console.error and the logic notifications is moving
+
+[33mcommit 70fdb05a153d0378ebc3fc81e875bd83bf6d9da5[m
+Merge: 5ac0db3 2dc6ff3
+Author: Nicolas Gonzalez <ngonzalez@comercializadora-s3.com>
+Date:   Thu Nov 9 15:43:44 2023 +0000
+
+    Merged in dev-ngonzales (pull request #30)
+    
+    Dev ngonzales
+    
+    Approved-by: CS3 Development
+
+[33mcommit 2dc6ff36b9b477ef74786297ccde886e32fda1c0[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Thu Nov 9 10:08:26 2023 -0500
+
+    Change the personType field to optional and login logic
+
+[33mcommit 5ac0db31164642f2cf7c1c063c1ec70904ead1be[m
+Merge: fe6a265 2485918
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Nov 9 14:10:19 2023 +0000
+
+    Merged in dev-luisb (pull request #32)
+    
+    Fix institutional program input and adding default into ur entity
+    
+    Approved-by: CS3 Development
+
+[33mcommit 24859183023a283969c49b4f93a3fce6e7ba9b49[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Nov 9 08:57:37 2023 -0500
+
+    Fix institutional program input and adding default into ur entity
+
+[33mcommit fe6a265e26c24babc7ace99efa25ad47867ac122[m
+Merge: 890c8eb 9e8200a
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Nov 8 21:20:30 2023 +0000
+
+    Merged in dev-luisb (pull request #31)
+    
+    Fix item tags for string and other types
+    
+    Approved-by: CS3 Development
+
+[33mcommit 9e8200a4129cfc92a9e27201518332f77d0f1645[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Nov 8 15:12:13 2023 -0500
+
+    Fix item tags for string and other types
+
+[33mcommit c9a7df0ede91fa2ddecb883067ffcdad21e7fd56[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Wed Nov 8 14:39:38 2023 -0500
+
+    Add emails in recover password and sign up
+
+[33mcommit 091cb57544589ad075e9b24ff18bbc9e19e76234[m
+Merge: 13f45ad 890c8eb
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Wed Nov 8 13:14:48 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-ngonzales
+
+[33mcommit 13f45ade3b3999d10ac7359b6af9836db008ea5e[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Wed Nov 8 13:10:19 2023 -0500
+
+    Add recover and update password
+
+[33mcommit 76142444fd5526aad97e0859d858ec84afcc7ad5[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Wed Nov 8 10:10:50 2023 -0500
+
+    Add interceptor to validate user status
+
+[33mcommit 890c8ebf394d18c549cef5018be8a9af87554c20[m
+Merge: 3ec36ff aab47cd
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Wed Nov 8 13:43:54 2023 +0000
+
+    Merged in dev-raimon (pull request #29)
+    
+    🔐 Changes in env template
+
+[33mcommit aab47cda8e3163cad37b97511920b1b4b516ed0c[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Wed Nov 8 08:43:19 2023 -0500
+
+    🔐 Changes in env template
+
+[33mcommit e1fbe85aae0fdbbb18fdede93c59f564768ed395[m
+Merge: c6df75c 3ec36ff
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Tue Nov 7 18:11:49 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-ngonzales
+
+[33mcommit c6df75c86a4c8aac53fb53ad5496f99bf3eac2a9[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Tue Nov 7 18:11:35 2023 -0500
+
+    Fix some wrongs in autentication and autorization
+
+[33mcommit 3ec36ff8aed5488c52ddbb33b3d245097014207d[m
+Merge: 7075cfa e47be06
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Tue Nov 7 22:30:59 2023 +0000
+
+    Merged in dev-raimon (pull request #27)
+    
+    Dev raimon
+
+[33mcommit 7075cfacfd72dcb878bd0b3106a0fc535c89bef3[m
+Merge: fbff0bb 7b84386
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Nov 7 22:24:27 2023 +0000
+
+    Merged in dev-luisb (pull request #28)
+    
+    Dev luisb
+    
+    Approved-by: CS3 Development
+
+[33mcommit 7b84386b7dcdf4b9a1a661cba0ad42b0472949e4[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Nov 7 17:18:20 2023 -0500
+
+    Delete slider configuration
+
+[33mcommit 2a62e056e734e849f13ab99a395a2c2217990ac4[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Nov 7 16:53:48 2023 -0500
+
+    Fix enum procedures to array
+
+[33mcommit e47be0645406a9989452cb39a47379af9e1230a4[m
+Merge: 1416f7a fbff0bb
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Nov 7 16:39:39 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-raimon
+
+[33mcommit fbff0bb962378069676b8626b1e9d47c37d0ec03[m
+Merge: f8f56f5 ba1dfad
+Author: Nicolas Gonzalez <ngonzalez@comercializadora-s3.com>
+Date:   Tue Nov 7 21:17:01 2023 +0000
+
+    Merged in dev-ngonzales (pull request #23)
+    
+    Dev ngonzales
+    
+    Approved-by: CS3 Development
+
+[33mcommit 1416f7a9493a202a6e20951a23e274d27a28f3f2[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Nov 7 11:54:37 2023 -0500
+
+    ✨ ♻️ Changes in notification service & added bull module
+
+[33mcommit 315dd1143d766eb1de1f71a4a582a218852ff7dc[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Tue Nov 7 10:17:55 2023 -0500
+
+    Scalar documentation
+
+[33mcommit 211afda0e18caa11b1c08f4f6e6819bafa5ee4b1[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Nov 7 09:58:15 2023 -0500
+
+    Fix slider block and adding new landed fields within reach
+
+[33mcommit 45e9e20ad7547026a5c1e6bf41c5c0865cc6e2ee[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Sat Nov 4 11:32:06 2023 -0500
+
+    :sparkles: Changes in email service
+
+[33mcommit 824f31ca305d2eb4321b637f3b0e3c4a1cb1b2ae[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Sat Nov 4 11:28:05 2023 -0500
+
+    Fix attention lines name to page-attention-lines-block
+
+[33mcommit ba1dfad5b1de9718d3d7a4bd2c12d23731f178bb[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Sat Nov 4 10:26:43 2023 -0500
+
+    Add custom scalar to validate password
+
+[33mcommit 6eb17507d49e5e94f83a9a81544aa6b49eee274d[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Sat Nov 4 10:10:45 2023 -0500
+
+    :sparkles: Implemented notification module in dummy service
+
+[33mcommit 66167708a05b9a96d4016ba472b3881d4d13fe14[m
+Merge: 0b1941c f8f56f5
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Fri Nov 3 15:54:31 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-ngonzales
+
+[33mcommit 0b1941c1b14ae363b5e8b7ce8df539403b2fac44[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Fri Nov 3 15:54:20 2023 -0500
+
+    Authentication service is set
+
+[33mcommit 5e098ab7a34f151510c39386edd2d75571bac5aa[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Nov 3 15:41:57 2023 -0500
+
+    Adding sliter item requirements
+
+[33mcommit f8f56f5a328cf8c360662eec1fa8f8b057f26534[m
+Merge: b6cc93a 6c34613
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Nov 3 15:21:35 2023 +0000
+
+    Merged in dev-luisb (pull request #21)
+    
+    Fix fields names of entities and require optional image
+    
+    Approved-by: Raimon Koudsi
+
+[33mcommit 239341a91fb7434f3498527ff32bf91a5d4b7b66[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Fri Nov 3 10:07:56 2023 -0500
+
+    Add filds in signup
+
+[33mcommit 56a83c1d6a92395252cca891663689b74e65e927[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Fri Nov 3 08:30:08 2023 -0500
+
+    ♻️ ✨ New Entities: notifications, notifications config, lot. Changes in profile module.
+
+[33mcommit 0c50e54616ae849fd81f3bf67e5456b49d0577ff[m
+Merge: 9fc2864 b6cc93a
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Thu Nov 2 18:18:30 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-ngonzales
+
+[33mcommit 9fc286439b6a57af4317fa67592472557b8b427d[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Thu Nov 2 18:18:18 2023 -0500
+
+    User registration system
+
+[33mcommit 6c34613c044527f5751404fae2755a11b817ebc2[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Nov 2 17:37:17 2023 -0500
+
+    Fix fields names of entities and require optional image
+
+[33mcommit 162e2c1a9b1565174c0369c1bc6bedebe357d193[m
+Merge: 8426892 b6cc93a
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Thu Nov 2 17:31:29 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-raimon
+
+[33mcommit b6cc93a8f60472f43cc958aea0b677bdd442cdf7[m
+Merge: 5fd8f27 96be4b0
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Nov 2 21:59:20 2023 +0000
+
+    Merged in dev-luisb (pull request #19)
+    
+    Adding page cabinet block and block item
+    
+    Approved-by: CS3 Development
+
+[33mcommit 96be4b0da9916600acb8cec4eb4aa4dbff886775[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Nov 2 16:36:33 2023 -0500
+
+    Fix update field into union item block
+
+[33mcommit 4119d8bba873dc1410591a9e154399cc35c94ad8[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Nov 2 16:18:53 2023 -0500
+
+    Adding institutionalb page and fix entities
+
+[33mcommit 49b5c03fb9f329849a467c6285413f5f91d56509[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Nov 2 12:07:06 2023 -0500
+
+    Adding attention lines block /item
+
+[33mcommit 9f291504d245d9bc584f2d4683150513ec9e3364[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Nov 2 10:18:17 2023 -0500
+
+    Adding page cabinet block and block item
+
+[33mcommit ff9cb3b8941ac9933053c768e459259e81a855de[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Thu Nov 2 08:18:43 2023 -0500
+
+    Fix relationships in entities
+
+[33mcommit c807639dd36bb487264337a20394a0ace441dc40[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Wed Nov 1 20:34:43 2023 -0500
+
+    Service to clone page
+
+[33mcommit 84268923fa36f5f5efeccb3446bc3bba56a58263[m
+Merge: 65227e1 5fd8f27
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Wed Nov 1 18:06:48 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-raimon
+
+[33mcommit f88616081966bf0cd9e8274f75595ea14ef769d6[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Wed Nov 1 17:52:44 2023 -0500
+
+    First version
+
+[33mcommit 5fd8f27e2e6421d37f127483fa00f5818d3a43f7[m
+Merge: 554e21f 980cf88
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Nov 1 19:17:32 2023 +0000
+
+    Merged in dev-luisb (pull request #17)
+    
+    Jest test needs relative path
+    
+    Approved-by: CS3 Development
+
+[33mcommit 980cf88933b085224772a4e0b2c1e4228204ec9b[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Nov 1 11:37:33 2023 -0500
+
+    Jest test needs relative path
+
+[33mcommit 65227e188761ad13e8ce4b0df9cd5a886497a6a9[m
+Merge: 3b78e34 554e21f
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Oct 31 22:00:51 2023 -0500
+
+    Merge branch 'demo' of https://bitbucket.org/cs3dev/govco-backend into dev-raimon
+
+[33mcommit 554e21f1c027e2ea983fe4ef597f8b978feffbc7[m
+Merge: 9885608 d3d3b9b
+Author: Nicolas Gonzalez <ngonzalez@comercializadora-s3.com>
+Date:   Tue Oct 31 12:48:56 2023 +0000
+
+    Merged in dev-ngonzales (pull request #16)
+    
+    Dev ngonzales
+    
+    Approved-by: Raimon Koudsi
+
+[33mcommit d3d3b9b4dac35350769ba3a6e1429de00d2463ba[m
+Merge: eb28712 9885608
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Mon Oct 30 15:50:25 2023 -0500
+
+    Merge with demo
+
+[33mcommit eb2871225fae52f621a688650d6e9482aab1c9f5[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Mon Oct 30 11:59:28 2023 -0500
+
+    Fix some errors in imports and events
+
+[33mcommit e97613371518d94c1418185b57a103a3d89d30ca[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Mon Oct 30 09:44:46 2023 -0500
+
+    🐛 Fixed Page Newsletter service
+
+[33mcommit b1420905259b5ce50d218f1e28c258dad8db8958[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Mon Oct 30 08:37:19 2023 -0500
+
+    Add subpages and create pageBlockItems
+
+[33mcommit 3b78e34d7f084d53e6862436d2b9e9f90be44735[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Mon Oct 30 08:36:54 2023 -0500
+
+    :sparkles: Added Certimails module
+
+[33mcommit 9885608fb3469aab8d99fbca697117af0cf7d1cb[m
+Merge: 44855e9 2440427
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Mon Oct 30 06:53:09 2023 +0000
+
+    Merged in dev-raimon (pull request #13)
+    
+    :sparkles: Fixed file controller
+
+[33mcommit 24404271aa8ee2ab930b4eb13195ca31e527cdcd[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Mon Oct 30 01:51:19 2023 -0500
+
+    :sparkles: Fixed file controller
+
+[33mcommit 44855e9c66ee26051b34a60ae009ef3485e6e93c[m
+Merge: a19dfa7 28e1737
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Sat Oct 28 17:47:19 2023 +0000
+
+    Merged in dev-luisb (pull request #11)
+    
+    update quality from procedurequality
+    
+    Approved-by: CS3 Development
+
+[33mcommit 28e17374590d38c6f997016e1c62ac3b6e9a8325[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Sat Oct 28 09:34:51 2023 -0500
+
+    Addig new pagetransparencyblockitem and field into patern
+
+[33mcommit 58163660bfb1b52fa94a3791d060ddcb33923ebe[m
+Author: nicolasggdev <nicolasggdev@gmail.com>
+Date:   Fri Oct 27 22:16:18 2023 -0500
+
+    page and subpage for procedure
+
+[33mcommit 666b74e7b2521fa567b116982746a916aee6cc3e[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Oct 27 09:27:46 2023 -0500
+
+    Include timestamp date column into regulation entity and dto
+
+[33mcommit 5078fed96e2a791317eb0492cb14157820d5b5dd[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Thu Oct 26 08:51:21 2023 -0500
+
+    update quality from procedurequality
+
+[33mcommit a19dfa7e24f1f8d85a98f7deb323ab5a7a4d1b16[m
+Merge: 86840df 3f94846
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Wed Oct 25 23:50:36 2023 +0000
+
+    Merged in dev-andres (pull request #10)
+    
+    Dev andres
+    
+    Approved-by: CS3 Development
+
+[33mcommit 86840df42d642503d09366b756cea14136ef2272[m
+Merge: fc86c04 68b6b92
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Oct 25 23:50:16 2023 +0000
+
+    Merged in dev-luisb (pull request #9)
+    
+    Adding new fields into procedures and regulations
+    
+    Approved-by: CS3 Development
+
+[33mcommit 3f94846dd1e0fbd88e46934e20fd3de62caabf49[m
+Author: Andres DelaOssa <andres@comercializadora-s3.com>
+Date:   Wed Oct 25 18:27:24 2023 -0500
+
+    fix page regulations block service (crud mixin)
+
+[33mcommit 19ec19daed7bcfd774e03b2e2ce5937f8b675353[m
+Author: Andres DelaOssa <andres@comercializadora-s3.com>
+Date:   Wed Oct 25 18:03:02 2023 -0500
+
+    subPages now supported
+
+[33mcommit 68b6b92a081f45c9251c934bcf798f33026a877f[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Wed Oct 25 17:55:04 2023 -0500
+
+    Adding new fields into procedures and regulations
+
+[33mcommit fc86c041370f14ee1f22e174cdf5ccb632a6d329[m
+Merge: 2eb86a7 2b33ab4
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Wed Oct 25 20:46:18 2023 +0000
+
+    Merged in dev-andres (pull request #8)
+    
+    Dev andres
+    
+    Approved-by: CS3 Development
+
+[33mcommit 2b33ab43b873408d6b4da705a24978b974d2408f[m
+Author: Andres DelaOssa <andres@comercializadora-s3.com>
+Date:   Wed Oct 25 15:34:04 2023 -0500
+
+    docs + how to add a new page block item type
+
+[33mcommit afaf13bfef5d0c91476d79faa0044fc01dfaff37[m
+Author: Andres DelaOssa <andres@comercializadora-s3.com>
+Date:   Wed Oct 25 15:05:44 2023 -0500
+
+    class structure explanation + how to add a new page block type
+
+[33mcommit 95567618342e5c3ca77593bbb0d8447bbcc08aad[m
+Author: Andres DelaOssa <andres@comercializadora-s3.com>
+Date:   Wed Oct 25 13:35:35 2023 -0500
+
+    i give up x2
+
+[33mcommit dfa7b8a54f832e4123e6c5eac7d5f42f9a803393[m
+Author: Andres DelaOssa <andres@comercializadora-s3.com>
+Date:   Wed Oct 25 13:34:57 2023 -0500
+
+    i give up
+
+[33mcommit 1288de7078e1b1893eeba4bd59932d66159a9d4a[m
+Author: Andres DelaOssa <andres@comercializadora-s3.com>
+Date:   Wed Oct 25 13:33:44 2023 -0500
+
+    fix nest image
+
+[33mcommit c6e3b1a413828864ce33cb1ecb85611c656a5348[m
+Merge: 30ee68a f8db50f
+Author: Andres DelaOssa <andres@comercializadora-s3.com>
+Date:   Wed Oct 25 13:29:06 2023 -0500
+
+    Merge branch 'dev-andres' of https://bitbucket.org/cs3dev/govco-backend into dev-andres
+
+[33mcommit 30ee68a67c11ad86da8a495218974d2cbbbd876f[m
+Author: Andres DelaOssa <andres@comercializadora-s3.com>
+Date:   Wed Oct 25 13:24:48 2023 -0500
+
+    documentation started!
+
+[33mcommit f8db50f23a448c06a827b1a371c5fbafe3b02581[m
+Author: Andres DelaOssa <andres@comercializadora-s3.com>
+Date:   Wed Oct 25 13:24:48 2023 -0500
+
+    documentation started!
+
+[33mcommit 2eb86a7935f9817d2759540276ea327aed4cd929[m
+Merge: ac92e83 b398613
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Tue Oct 24 23:04:37 2023 +0000
+
+    Merged in dev-andres (pull request #7)
+    
+    fix merges in new branch
+    
+    Approved-by: CS3 Development
+
+[33mcommit b39861350d2457d0ecece3d00754bdccdc780a73[m
+Author: Andres DelaOssa <andres@comercializadora-s3.com>
+Date:   Tue Oct 24 17:44:07 2023 -0500
+
+    fix merges in new branch
+
+[33mcommit 6b39cb92ecf0720679c2483c2e252d56c2aca01a[m
+Merge: 6884536 ac92e83
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Tue Oct 24 22:34:48 2023 +0000
+
+    Merged in demo (pull request #4)
+    
+    Demo
+
+[33mcommit ac92e839ed6364f59a0a6facf52fd86cc4d1432b[m
+Merge: 6884536 60c6e4a
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Tue Oct 24 22:34:00 2023 +0000
+
+    Merged in master (pull request #3)
+    
+    Master
+
+[33mcommit 60c6e4aac6757bed89fd45689243d30891d56af9[m
+Merge: 95164e6 7881ad6
+Author: CS3 Development <webmaster@comercializadora-s3.com>
+Date:   Tue Oct 24 22:26:09 2023 +0000
+
+    Merged in dev-luisb (pull request #2)
+    
+    Dev luisb
+
+[33mcommit 7881ad6db9e890fce75e497f1b44e1644aa5ab80[m
+Merge: 955c3e4 95164e6
+Author: Daiber Vergel <dvergel@cs3.com.co>
+Date:   Tue Oct 24 17:25:49 2023 -0500
+
+    mondongo
+
+[33mcommit 95164e60ffb4462163bc3bdceb1e01aad0b9a07a[m
+Merge: 4137604 8f24698
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Tue Oct 24 17:21:48 2023 -0500
+
+    Merge branch 'master' of https://bitbucket.org/cs3dev/govco-backend
+
+[33mcommit 413760452e00e8801ad0af569366d603ad8c0134[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Tue Oct 24 17:21:36 2023 -0500
+
+    begin documentation
+
+[33mcommit 955c3e451997210a4afc212a78388281cca837c6[m
+Merge: 752b721 8f24698
+Author: Daiber Vergel <dvergel@cs3.com.co>
+Date:   Tue Oct 24 17:16:56 2023 -0500
+
+    sesu
+
+[33mcommit 752b721c710c479e5a50ec664cd5d054f7e7adda[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Oct 24 15:14:39 2023 -0500
+
+    last entity createBlockItem error wait for service
+
+[33mcommit 8f24698a2a7d3e3aeaddb7173c5c58c437b3e124[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Tue Oct 24 09:49:52 2023 -0500
+
+    :sparkles: Add download file
+
+[33mcommit 96e059d015073128e5100a8a880f6cbeda9741bc[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Tue Oct 24 09:16:52 2023 -0500
+
+    Addign new field into entities and inputs dto
+
+[33mcommit 14c726390fb02aa6c48ba27adadf295f482b3990[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Sat Oct 21 14:30:58 2023 -0500
+
+    fix main interceptor that was fucking everything
+
+[33mcommit 460764cc6d1c3322ee7087ff703ce4a516ae40ed[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Sat Oct 21 12:03:30 2023 -0500
+
+    fixed pagination that broke when applying conditions of a relation, also fixed FindArgsType in crud-resolver.mixin so required arguments will not be ignored
+
+[33mcommit 573d38bb2ff72b05e0e4df23195b501f40e8a615[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Fri Oct 20 21:00:32 2023 -0500
+
+    find where conditions now can extend to foreign entities by left joining (automatic)
+
+[33mcommit ca2ae1074b16c83a2995084eb179c1e69f88cac2[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Fri Oct 20 16:52:54 2023 -0500
+
+    implemented simple where conditions (strings, numbers, dates and enumTypes)
+
+[33mcommit 8d3e6227936606a3bd179c0b03d898d4e97f9a32[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Oct 20 16:27:21 2023 -0500
+
+    Try solution method
+
+[33mcommit 28ee4a3edc99715983143b3906112f0629993c45[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Fri Oct 20 16:12:57 2023 -0500
+
+    transaction interceptor and decorator
+
+[33mcommit ae8174f549c49adb329bd7bbf6285b159c5dfd77[m
+Author: Luis Ballesteros <lballesteros@comercializadora-s3.com>
+Date:   Fri Oct 20 15:21:26 2023 -0500
+
+    Adding new fields into entityes
+
+[33mcommit 5d29221b225f5ed2b530c8167f28fb71e8cc01b1[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Fri Oct 20 12:22:26 2023 -0500
+
+    refactoring files mode, make independant to mongodb, housekeeping main.ts, fixin filesInfo to not load buffer on select
+
+[33mcommit 2f0170c0b2f583d1297df5d57c75bdacf272d222[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Fri Oct 20 09:36:49 2023 -0500
+
+    :sparkles: Changes in Files controller
+
+[33mcommit 9ccc1ce7ab7682b444374e6e0231f77d70da260e[m
+Author: Raimon Koudsi <rkoudsi@comercializadora-s3.com>
+Date:   Fri Oct 20 09:33:19 2023 -0500
+
+    :sparkles: Adding files module & https
+
+[33mcommit 6b713a3550163206d3409fb5c0b955e6457919e2[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Fri Oct 20 09:22:48 2023 -0500
+
+    added schema.gql to .gitignore
+
+[33mcommit 3f24b607ad29119a72ea642bc87ceecce9d3d2bb[m
+Merge: bacf93f 70a222f
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Fri Oct 20 09:19:29 2023 -0500
+
+    delete graphql schema
+
+[33mcommit bacf93f34af1012f3c3ba0d8e6c984e1ef4d3980[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Thu Oct 19 23:11:50 2023 -0500
+
+    added where filters and count to findAll resolvers and queries
+
+[33mcommit 70a222f17da2f7f57cd8b90aa35b6fb43d9af951[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Thu Oct 19 23:11:50 2023 -0500
+
+    added where filters and count to findAll resolvers and queries
+
+[33mcommit 6884536fa290bbbd259bba93f88f06198a6e91fb[m[33m ([m[1;31morigin/pre-prod[m[33m)[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Wed Oct 18 17:59:27 2023 -0500
+
+    findall using paginator and schema to use where and order by
+
+[33mcommit f1d523ba7954684971963a6e2c0deb70f2ed0e63[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Wed Oct 18 08:38:50 2023 -0500
+
+    after refactoring to camelCase
+
+[33mcommit 3b686ad6167259b7344a4c8eacc6d2e1edcaff36[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Tue Oct 17 21:04:43 2023 -0500
+
+    before refactor to camelcase
+
+[33mcommit 4c313d67b3da095a802b218887b3e85e21604d9b[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Tue Oct 17 15:02:43 2023 -0500
+
+    implemented resolve field for each content block in the main page
+
+[33mcommit 3f557a4175bec51ca09391986d13e082ff73be17[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Tue Oct 17 12:04:20 2023 -0500
+
+    audit module moved to security
+
+[33mcommit a1fe43dd14ba5c221c11b94c7d56777fca9baadf[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Tue Oct 17 11:49:36 2023 -0500
+
+    audit module, interoperabilty with crud pattern mixin
+
+[33mcommit 4bdb1a9f601c6195dc11936cf06a36a7c5fdbbf0[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Sat Oct 14 21:38:58 2023 -0500
+
+    crud-pattern/controller with decorators
+
+[33mcommit 3d06b80ee665532215a2619159aa3e63d8566d4d[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Sat Oct 14 17:35:34 2023 -0500
+
+    crud-pattern/services now with mixin
+
+[33mcommit 054ad5de5f2c1686fa0a5a1845636457b49e3bc0[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Fri Oct 13 12:36:13 2023 -0500
+
+    crud-pattern/services now structured
+
+[33mcommit 0ebcd1a4bc397a9aef1037bd9091af27eea7e376[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Wed Oct 11 22:58:53 2023 -0500
+
+    header, footer and main-page modules
+
+[33mcommit ccbbbaf945441d2420e70eb842691362cbc32c8e[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Wed Oct 11 20:27:58 2023 -0500
+
+    nested event handlers in everycrud service
+
+[33mcommit 1d9e050f81840b72ee03fe6da2d5cabcfd0231ec[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Wed Oct 11 18:48:18 2023 -0500
+
+    auth module, config, poi & class validator
+
+[33mcommit e110f4b9b4c786d94f822878cf940e0efb2e7341[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Tue Oct 10 10:37:14 2023 -0500
+
+    changed current context to interface and changed all generic.services to receive the contexttype
+
+[33mcommit 5d6498dd80674b84acfc0b131402c8d3b1b9aa68[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Tue Oct 10 09:57:59 2023 -0500
+
+    renamed shared module to general module
+
+[33mcommit a3ba9d86fd7ea3b6c11c39f180617375faa41ad7[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Mon Oct 9 12:12:42 2023 -0500
+
+    refactoring normativity to regulations & default template to versions
+
+[33mcommit dbbc22617450be336748beb3e61e8eac90a680ec[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Mon Oct 9 09:03:14 2023 -0500
+
+    added .env template
+
+[33mcommit 7e890e79fd09fcd52d7929e26945bbc6e36003bb[m
+Author: Andres De la Ossa <andres@comercializadora-s3.com>
+Date:   Mon Oct 9 08:57:12 2023 -0500
+
+    initial commit

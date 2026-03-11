@@ -1,0 +1,22 @@
+{
+  "validateInput": {
+    "lotId": "Campo lotId no suministrado",
+    "contractId": "Campo contractId no suministrado",
+    "stampInput": "Input stampInput no suministrado"
+  },
+  "beforeMutation": {
+    "contract": "Contrato no encontrado",
+    "lot": "Contrato no encontrado",
+    "stamp": "Estampilla no encontrado"
+  },
+  "MovementStatus": {
+    "ERROR": "Error",
+    "SEND": "Enviado",
+    "UNSENT": "Sin enviar"
+  },
+  "TypeMovement": {
+    "REGISTER": "Registro",
+    "ADHESION": "Adhesión",
+    "APPLY": "Pago"
+  }
+}

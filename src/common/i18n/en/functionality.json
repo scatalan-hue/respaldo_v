@@ -1,0 +1,11 @@
+{
+  "functionalitiesDescriptionByPermission": {
+    "findDescription": "There's no description for {key}"
+  },
+  "synchronizeFunctionalities": {
+    "response": "Synced successfully"
+  },
+  "beforeUpdate": {
+    "fileInfo": "Object with id {id} not found"
+  }
+}

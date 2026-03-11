@@ -1,0 +1,5 @@
+{
+  "beforeCreate": {
+    "stampAlreadyExists": "La estampilla ya existe con los mismos datos."
+  }
+}

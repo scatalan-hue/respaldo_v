@@ -1,0 +1,23 @@
+version: '3.8'
+
+name: vudec
+services:
+  vdc_container_01:
+    image: ${DOCKER_IMAGE_NESTJS}
+    container_name: vdc_container_01
+    ports:
+      - ${APP_PORT}:${APP_PORT}
+    env_file: '.env'
+    mem_limit: 1GB
+    extra_hosts:
+      - proxy-host:host-gateway
+    environment:
+      STATE: prod
+      HTTPS: true
+      DB_HOST: proxy-host
+      DB_MONGODB_SERVER: mongodb://proxy-host:27017
+      REDIS_HOST: proxy-host
+      TZ: America/Bogota
+    volumes:
+      - ./src/certs:/vudec/src/certs
+    restart: always

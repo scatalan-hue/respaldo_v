@@ -1,0 +1,68 @@
+{
+  "checkUserPassword": {
+    "currentPassword": "Debes restablecer tus credenciales",
+    "compareCrypt": "Ha habido un problema al validar la contraseña actual"
+  },
+  "checkPasswordConfirm": {
+    "password": "confirmationPassword debe ser igual a password"
+  },
+  "partialCreation": {
+    "findUser": "El usuario con email {email} ya existe en la base de datos"
+  },
+  "externalCreation": {
+    "productKeyOrOrganization": "Debe necesitar una organización o producto en la carga útil",
+    "organizationData": "La organización {organization} no existe",
+    "productFound": "El producto {productKey} no existe"
+  },
+  "beforeCreate": {
+    "sameEmailUser": "El usuario con email {userEmail} ya existe"
+  },
+  "beforeMutation": {
+    "superAdmin": "Sólo un superAdmin puede crear, actualizar o eliminar un nuevo usuario superAdmin",
+    "organizationData": "La organización con id {organizationId} no existe"
+  },
+  "findOneByEmail": {
+    "userOrFail": "Usuario con email: {email} no encontrado"
+  },
+  "findOneById": {
+    "userOrFail": "Usuario con id: {id} no encontrado"
+  },
+  "findOneByIdentificationNumber": {
+    "userOrFail": "Usuario con número de identificación: {identificationNumber} no encontrado"
+  },
+  "sendEmailRecoveryPassword": {
+    "response": "Código enviado correctamente"
+  },
+  "validateAndRetrieveUserByToken": {
+    "error": "Token no válido"
+  },
+  "updateUserProfile": {
+    "organizationData": "La organización con id {organizationId} no existe"
+  },
+  "codeRecoverPassword": {
+    "result": "Código no válido"
+  },
+  "authByCode": {
+    "getRecord": "Código no válido",
+    "expired": "Código caducado",
+    "error": "Error en el código introducido"
+  },
+  "recoverPasswordEmail": {
+    "error": "Se ha producido un error al crear la notificación: {result}"
+  },
+  "temporalPassword": {
+    "error": "Se ha producido un error al crear la notificación: {result}"
+  },
+  "processInstance": {
+    "hasSigners": "No se encontraron firmantes validos"
+  },
+  "assignSigner": {
+    "allSigners": "No se encontraron firmantes en la instancia",
+    "organizationId": "No se encontró organización asociada a la instancia",
+    "processDefinition": "No se encontró una definición de proceso asociado a la instancia",
+    "user": "No fue posible obtener el usuario de la base de datos"
+  },
+  "createUserRoles": {
+    "role": "Rol con id: {roleId} no encontrado"
+  }
+}

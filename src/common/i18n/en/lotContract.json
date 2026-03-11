@@ -1,0 +1,7 @@
+{
+  "beforeMutation": {
+    "lot": "Lot not found",
+    "contract": "Contract not found",
+    "lotContract": "The contract has already registered in the lot"
+  }
+}

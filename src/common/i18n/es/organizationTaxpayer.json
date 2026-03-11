@@ -1,0 +1,7 @@
+{
+  "beforeMutation": {
+    "taxpayer": "Tercero no encontrado",
+    "organization": "Organización no encontrada",
+    "organizationTaxpayer": "La organización ya tiene asignado a este tercero"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "beforeMutation": {
+    "product": "Producto con id {id} no encontrado",
+    "organization": "Organización con id {id} no encontrado",
+    "organizationProduct": "La organización ya cuenta con el producto registrado"
+  }
+}

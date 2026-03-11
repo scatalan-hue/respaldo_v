@@ -1,0 +1,8 @@
+{
+  "validateInput": {
+    "organizationProduct": "Organization or product of the API key do not exist"
+  },
+  "findTaxpayer": {
+    "taxpayerNumberRequired": "Identification number is required to search for the taxpayer"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "externalApikeyInterceptor": {
+    "apikey": "No ApiKey provided",
+    "credentials": "ApiKey not found"
+  }
+}

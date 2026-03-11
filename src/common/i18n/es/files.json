@@ -1,0 +1,9 @@
+{
+  "getFileFromUrl": {
+    "fileNotFound": "Error al descargar el archivo de {url}: {message}"
+  },
+  "findOrCreateFileBySource": {
+    "fileNotFound": "Archivo no encontrado"
+  },
+  "modeNotFound": "Modo de archivo no encontrado"
+}

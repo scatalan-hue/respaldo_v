@@ -1,0 +1,12 @@
+{
+  "beforeMutation": {
+    "department": "Departamento no encontrado",
+    "city": "Ciudad no encontrada",
+    "organizationParent": "La organización padre con id {organizationParentId} no encontrada",
+    "logo": "Logo no encontrado",
+    "logoAlreadyAssigned": "Logo ya se encuentra asignado a otra organización"
+  },
+  "beforeCreate": {
+    "organizationAlreadyExists": "Ya existe una organizaciónX con el mismo NIT."
+  }
+}
