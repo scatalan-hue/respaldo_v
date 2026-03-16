@@ -62,7 +62,7 @@ export function adhesionMovementDto(row: TransactionRowDto, contractId: string, 
         typeValue: 'Porcentaje',
         documentValue: 0,
         isRevert: false,
-        percentageValue: 0,//FIXME: ni idea de a que hay que sacarle el porcentaje.
+        percentageValue: 0,//FIXME: preguntar a que hay que sacarle el porcentaje.
         fixedValue: 0,
         liquidatedValue: movementValue,//FIXME: preguntar que valor va en este campo solo existe en el movimentio de adhesion y tambien es el mismo valor del campo (value).
         stampInput: { stampNumber: normalizeString(row.stampNumber) },

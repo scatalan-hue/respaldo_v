@@ -37,7 +37,7 @@ export class TransactionService extends CrudServiceFrom(serviceStructure) {
 		private readonly eventEmitter: EventEmitter2,
 	) { super(); }
 
-  	private readonly I18N_SPACE = I18N_SPACE.Transaction;
+	private readonly I18N_SPACE = I18N_SPACE.Transaction;
 
 	async afterCreate(context: IContext, repository: Repository<Transaction>, entity: Transaction, createInput: CreateTransactionInput): Promise<void> {
 		if (!createInput.parentId) {
@@ -79,12 +79,14 @@ export class TransactionService extends CrudServiceFrom(serviceStructure) {
 		if (transaction) {
 			createInput.parentId = transaction.id;
 
-			await this.eventEmitter.emitAsync(createTransactionHistoryEvent, { context, createInput: { 
-				...createInput,
-				id: undefined,
-				transactionId: transaction.id,
-				isRevert: createContractInput.isRevert
-			} });
+			await this.eventEmitter.emitAsync(createTransactionHistoryEvent, {
+				context, createInput: {
+					...createInput,
+					id: undefined,
+					transactionId: transaction.id,
+					isRevert: createContractInput.isRevert
+				}
+			});
 		}
 
 		const result = await this.create(context, createInput);
@@ -93,10 +95,10 @@ export class TransactionService extends CrudServiceFrom(serviceStructure) {
 			context,
 			payload: {
 				config: {
-				serviceName: '',
-				url: context.organizationProduct.url,
-				method: HttpMethod.POST,
-				requestData: undefined
+					serviceName: '',
+					url: context.organizationProduct.url,
+					method: HttpMethod.POST,
+					requestData: undefined
 				},
 				responseOrError: JSON.stringify(createContractInput),
 				isError: false
@@ -119,18 +121,18 @@ export class TransactionService extends CrudServiceFrom(serviceStructure) {
 				timeoutPromise
 			]);
 		} catch (error) {
-			await this.update(context, transactionId, { 
-				id: transactionId.toUpperCase(), 
-				status: TransactionStatus.ERROR, 
-				message: error?.message, 
-				validation: ValidationResponse.ERROR 
+			await this.update(context, transactionId, {
+				id: transactionId.toUpperCase(),
+				status: TransactionStatus.ERROR,
+				message: error?.message,
+				validation: ValidationResponse.ERROR
 			});
 			throw error;
 		}
 	}
 
 	private async executeTransactionProcess(context: IContext, transactionId: string): Promise<ValidationResponseModel> {
-		const transaction = await this.findOneBy(context, 
+		const transaction = await this.findOneBy(context,
 			{
 				where: { id: transactionId },
 				relations: ['organizationProduct', 'organizationProduct.organization', 'organizationProduct.product'],
@@ -146,7 +148,7 @@ export class TransactionService extends CrudServiceFrom(serviceStructure) {
 		const transactionData: CreateContractInput = JSON.parse(transaction.data);
 
 		if (transaction.status === TransactionStatus.COMPLETE || transaction.status === TransactionStatus.IN_PROCESS) {
-			return { 
+			return {
 				status: ValidationResponse.TRANSACTION_PROCESSED,
 				message: 'La transaccion ya ha sido procesada previamente.'
 			};
@@ -162,14 +164,14 @@ export class TransactionService extends CrudServiceFrom(serviceStructure) {
 		}
 
 		//Aplicacion
-		const [contract] = await this.eventEmitter.emitAsync(createContractByTransactionEvent, { 
-			context, 
-			createInput: transactionData, 
+		const [contract] = await this.eventEmitter.emitAsync(createContractByTransactionEvent, {
+			context,
+			createInput: transactionData,
 			transactionId: transaction.id
 		}) as [Contract];
 
 		//Edicion de transaccion completa
-		await this.update(context, transactionId, { 
+		await this.update(context, transactionId, {
 			id: transactionId.toUpperCase(),
 			status: TransactionStatus.COMPLETE,
 			message: '',
@@ -187,33 +189,33 @@ export class TransactionService extends CrudServiceFrom(serviceStructure) {
 
 	async validateApplyTransaction(context: IContext, createContractInput: CreateContractInput): Promise<ValidationResponseModel> {
 
-        //Caso 1: Contrato sin numero consecutivo
-        if (!createContractInput.consecutive) {
-            return { 
-                status: ValidationResponse.CONTRACT_INCOMPLETE,
-                message: 'El contrato no tiene numero consecutivo asignado.'
-            };
-        }
+		//Caso 1: Contrato sin numero consecutivo
+		if (!createContractInput.consecutive) {
+			return {
+				status: ValidationResponse.CONTRACT_INCOMPLETE,
+				message: 'El contrato no tiene numero consecutivo asignado.'
+			};
+		}
 
-        //Caso 2: Validacion de movimientos asociados al contrato
-        const [validationMovements] = await this.eventEmitter.emitAsync(validateMovementsEvent, {
-            context,
-            movementsInput: createContractInput.movementsInput || [],
-        }) as [ValidationResponseModel];
+		//Caso 2: Validacion de movimientos asociados al contrato
+		const [validationMovements] = await this.eventEmitter.emitAsync(validateMovementsEvent, {
+			context,
+			movementsInput: createContractInput.movementsInput || [],
+		}) as [ValidationResponseModel];
 
-        if (validationMovements.status !== ValidationResponse.IN_PROCESS) {
-            return validationMovements;
-        }
+		if (validationMovements.status !== ValidationResponse.IN_PROCESS) {
+			return validationMovements;
+		}
 
-        //Caso 3: Validacion de contrato (VUDEC y SIGEC)
-        const [validationContract] = await this.eventEmitter.emitAsync(validateContractEvent, {
-            context,
-            createInput: createContractInput
-        }) as [ValidationResponseModel];
+		//Caso 3: Validacion de contrato (VUDEC y SIGEC)
+		const [validationContract] = await this.eventEmitter.emitAsync(validateContractEvent, {
+			context,
+			createInput: createContractInput
+		}) as [ValidationResponseModel];
 
-        return validationContract;
+		return validationContract;
 
-    }
+	}
 
 	@OnEvent(createTransactionByContractEvent, { suppressErrors: false })
 	async onCreateTransactionByContract({ context, createContractInput }: { context: IContext; createContractInput: CreateContractInput }): Promise<Transaction> {
@@ -226,9 +228,9 @@ export class TransactionService extends CrudServiceFrom(serviceStructure) {
 	}
 
 	async validateSecop(context: IContext, contractId: string): Promise<void> {
-        await this.eventEmitter.emitAsync(SigecEvents.ValidateContract, {
-            context,
-            contractId,
-        });
-    }
+		await this.eventEmitter.emitAsync(SigecEvents.ValidateContract, {
+			context,
+			contractId,
+		});
+	}
 }

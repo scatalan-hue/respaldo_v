@@ -8,15 +8,18 @@ import { BatchProcessorService } from './services/save_transaction/batch-process
 import { CorrectionRowValidator } from './validators/correction-row-transacation.validator';
 import { TransactionLoadService } from './services/save_transaction/excel-loader.service';
 import { SaveExcelService } from './services/save_transaction/save-data-excel.service';
+import { SaveExcelRowService } from './services/save_transaction/transactional.service';
 import { ExcelRowLoader } from './services/edit-transaction/excel-row.loader.service';
 import { TransactionCorrectionResolver } from './resolvers/correction.resolver';
 import { TransactionLoadResolver } from './resolvers/transaction-load.resolver';
 import { TransactionLoadEntity } from './entities/transaction-load.entity';
 import { Transaction } from '../transaction/entities/transaction.entity';
+import { transactionLoadQuee } from './constants/events.constants';
 import { ObtainErrorResolver } from './resolvers/error.resolver';
 import { Taxpayer } from '../../taxpayer/entity/taxpayer.entity';
 import { FilesModule } from 'src/general/files/files.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { BullModule } from '@nestjs/bull';
 import { Module } from '@nestjs/common';
 
 @Module({
@@ -26,7 +29,12 @@ import { Module } from '@nestjs/common';
       TransactionLoadEntity,
       Transaction,
       Taxpayer,
-    ])],
+    ]),
+    // BullModule.registerQueue({
+    //   name: transactionLoadQuee,
+    // })
+
+  ],
 
   providers: [
     TransactionCorrectionExcelService,
@@ -40,6 +48,7 @@ import { Module } from '@nestjs/common';
     CorrectionRowValidator,
     BatchProcessorService,
     ObtainErrorResolver,
+    SaveExcelRowService,
     GetErrorDBService,
     SaveExcelService,
     ExcelRowLoader,

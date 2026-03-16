@@ -61,7 +61,7 @@ import Joi from 'joi';
 
         SA_EMAIL: Joi.string().required(),
         SA_PASSWORD: Joi.string().required(),
-        
+
         SIGEC_URL: Joi.string().required(),
         VALIDATION_URL: Joi.string().required(),
         VALIDATION_SECOP: Joi.boolean().required()
@@ -96,7 +96,7 @@ import Joi from 'joi';
           database: configService.database.name,
           synchronize: true,
           autoLoadEntities: true,
-          logging: false,
+          logging: false /*['query', 'error']*/,
           extra: {
             trustServerCertificate: true,
           },
@@ -104,6 +104,7 @@ import Joi from 'joi';
         } as SqlServerConnectionOptions;
       },
     }),
+
     EventEmitterModule.forRoot(),
     ...(process.env.DB_MONGODB_SERVER
       ? [MongooseModule.forRoot(process.env.DB_MONGODB_SERVER + '/' + process.env.DB_MONGODB_NAME, { dbName: process.env.DB_MONGODB_NAME })]
@@ -137,6 +138,7 @@ import Joi from 'joi';
       }),
       inject: [],
     }),
+
     SecurityModule,
     MainModule,
     GeneralModule,

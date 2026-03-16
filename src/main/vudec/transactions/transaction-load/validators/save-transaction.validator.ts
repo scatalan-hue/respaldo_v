@@ -1,7 +1,6 @@
 import { IContext } from "src/patterns/crud-pattern/interfaces/context.interface";
 import { findStampEvent } from "src/main/vudec/stamp/constants/stamp.constants";
 import { TypeDoc } from "src/main/vudec/taxpayer/enums/taxpayer-type.enum";
-import { Stamp } from "src/main/vudec/stamp/entity/stamp.entity";
 import { EventEmitter2 } from "@nestjs/event-emitter";
 
 export type TransactionRowDto = {
@@ -118,7 +117,6 @@ export async function validateRow(context: IContext, dto: TransactionRowDto, eve
     return errors;
 }
 
-
 export const fieldValidations: Record<keyof TransactionRowDto, (v: string) => string | null> = {
     reversion: (v) => {
         if (!v) return 'es obligatorio';
@@ -159,19 +157,19 @@ export const fieldValidations: Record<keyof TransactionRowDto, (v: string) => st
     },
     firstName: (v) => {
         if (!v) return 'es obligatorio';
-        v.length > 255 ? 'máximo 255 caracteres' : null
+        return v.length > 255 ? 'máximo 255 caracteres' : null
     },
     secondName: (v) => {
         if (!v) return null;
-        v.length > 255 ? 'máximo 255 caracteres' : null
+        return v.length > 255 ? 'máximo 255 caracteres' : null
     },
     firstLastName: (v) => {
         if (!v) return 'es obligatorio';
-        v.length > 255 ? 'máximo 255 caracteres' : null
+        return v.length > 255 ? 'máximo 255 caracteres' : null
     },
     secondLastName: (v) => {
         if (!v) return 'es obligatorio';
-        v.length > 255 ? 'máximo 255 caracteres' : null
+        return v.length > 255 ? 'máximo 255 caracteres' : null
     },
     docType: (v) => {
         if (!v) return 'es obligatorio';
@@ -210,7 +208,8 @@ export const asyncFieldValidations: Partial<Record<keyof TransactionRowDto, (con
             stampNumber: v,
             orFail: false
         });
-        if (!(stamp instanceof Stamp)) return 'No EXISTE la estampilla ' + v
+        if (!stamp) return 'No EXISTE la estampilla ' + v
+
         return null;
     }
 };

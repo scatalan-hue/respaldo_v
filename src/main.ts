@@ -1,5 +1,7 @@
+import { addTransactionalDataSource, initializeTransactionalContext } from 'typeorm-transactional';
 import { ThrowExceptionFilter } from './common/functions/throw-exception-filter';
 import { GraphQLSchemaBuilderModule, GraphQLSchemaHost } from '@nestjs/graphql';
+import { LoggingInterceptor } from './common/interceptors/logging.interceptor';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { I18nMiddleware, I18nValidationPipe } from 'nestjs-i18n';
 import { SubscriptionServer } from 'subscriptions-transport-ws';
@@ -12,9 +14,12 @@ import { AppModule } from './app.module';
 import * as express from 'express';
 import * as https from 'https';
 import * as fs from 'fs';
-import { LoggingInterceptor } from './common/interceptors/logging.interceptor';
+import { DataSource } from 'typeorm';
+
 
 async function bootstrap() {
+  initializeTransactionalContext();
+
   process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
   const server = express.default();
 
@@ -28,6 +33,9 @@ async function bootstrap() {
   await app.init();
 
   let appServer: any = app;
+
+  const dataSource = app.get(DataSource);
+  addTransactionalDataSource(dataSource);
 
   if (process.env.HTTPS == 'true') appServer = configureHttpsServer(server);
   await configureSubscriptions(app, server);
