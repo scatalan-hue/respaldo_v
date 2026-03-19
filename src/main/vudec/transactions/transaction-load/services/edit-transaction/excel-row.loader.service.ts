@@ -1,8 +1,8 @@
 import { loadWorkbookFromBuffer } from "src/common/functions/excel/load-workbook-from-path";
 import { Normalize, uuidRegex } from "../../validators/save-transaction.validator";
 import { Transaction } from "../../../transaction/entities/transaction.entity";
+import { EXCEL_COLUMNS, EXCEL_CONFIG } from "../../constants/excel.constants";
 import { ExcelRowError } from "../../interfaces/transaction-load.interface";
-import { EXCEL_COLUMNS, EXCEL_CONFIG } from "../../config/excel.config";
 import { ExcelRowData } from "../../types/excel-row.type";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Injectable } from "@nestjs/common";

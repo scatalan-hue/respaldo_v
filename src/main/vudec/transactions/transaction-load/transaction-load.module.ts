@@ -54,9 +54,6 @@ import { Module } from '@nestjs/common';
     ExcelRowLoader,
 
   ],
-  exports: [
-    TransactionLoadService,
-    SaveExcelService,
-  ]
+  exports: []
 })
 export class TransactionLoadModule { }

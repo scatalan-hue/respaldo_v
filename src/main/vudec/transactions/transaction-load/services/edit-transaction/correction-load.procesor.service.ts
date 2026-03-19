@@ -7,8 +7,7 @@ import { IContext } from "src/patterns/crud-pattern/interfaces/context.interface
 import { Transaction } from "../../../transaction/entities/transaction.entity";
 import { Taxpayer } from "src/main/vudec/taxpayer/entity/taxpayer.entity";
 import { Normalize } from "../../validators/save-transaction.validator";
-import { BATCH_SIZE } from "../../constants/excel.constants";
-import { EXCEL_COLUMNS } from "../../config/excel.config";
+import { BATCH_SIZE, EXCEL_COLUMNS } from "../../constants/excel.constants";
 import { ExcelRowData } from "../../types/excel-row.type";
 import { Injectable, Logger } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";

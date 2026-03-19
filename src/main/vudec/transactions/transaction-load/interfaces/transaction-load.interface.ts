@@ -20,4 +20,7 @@ export interface RowValidationError {
     row: number;
     message: string;
 }
-
+export interface ErrorRows {
+    originalData: any,
+    message?: string
+}

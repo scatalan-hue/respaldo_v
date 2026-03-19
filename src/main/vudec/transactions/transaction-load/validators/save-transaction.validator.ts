@@ -8,8 +8,8 @@ export type TransactionRowDto = {
     contractNumber: string;
     contractValue: string;
     contractDate: string;
-    ContractStartDate: string;
-    ContractEndDate: string;
+    contractStartDate: string;
+    contractEndDate: string;
     movementDate: string;
     movementValue: string;
     stampNumber: string;
@@ -44,13 +44,13 @@ export const fieldLabels: Record<keyof TransactionRowDto, string> = {
     movementDate: 'Fecha Movimiento',
     contractNumber: 'Contrato Número',
     contractDate: 'Fecha de Contrato',
-    ContractStartDate: 'Fecha Inicial',
+    contractStartDate: 'Fecha Inicial',
     stampNumber: 'Número de Estampilla',
     secondLastName: 'Segundo Apellido',
     movementValue: 'Movimiento Valor',
     docNumber: 'Número de Documento',
     firstLastName: 'Primer Apellido',
-    ContractEndDate: 'Fecha Final',
+    contractEndDate: 'Fecha Final',
     secondName: 'Segundo Nombre',
     phone: 'Teléfono',
 };
@@ -135,11 +135,11 @@ export const fieldValidations: Record<keyof TransactionRowDto, (v: string) => st
         if (!v) return 'es obligatoria';
         return validateDateFormat(v) ? null : 'formato Día/Mes/Año';
     },
-    ContractStartDate: (v) => {
+    contractStartDate: (v) => {
         if (!v) return 'es obligatoria';
         return validateDateFormat(v) ? null : 'formato Día/Mes/Año';
     },
-    ContractEndDate: (v) => {
+    contractEndDate: (v) => {
         if (!v) return 'es obligatoria';
         return validateDateFormat(v) ? null : 'formato Día/Mes/Año';
     },
@@ -179,10 +179,10 @@ export const fieldValidations: Record<keyof TransactionRowDto, (v: string) => st
         }
         return null;
     },
-
     docNumber: (v) => {
         if (!v) return 'es obligatorio';
-        return v.length <= 10 ? null : 'Minimo 6 caracteres y máximo 10 caracteres';
+        if (v.length < 6 || v.length > 10) return 'mínimo 6 caracteres y máximo 10 caracteres';
+        return null;
     },
     email: (v) => {
         if (!v) return 'es obligatorio';
@@ -203,13 +203,17 @@ export const fieldValidations: Record<keyof TransactionRowDto, (v: string) => st
 
 export const asyncFieldValidations: Partial<Record<keyof TransactionRowDto, (context: IContext, v: string, eventEmitter: EventEmitter2) => Promise<string | null>>> = {
     stampNumber: async (context, v, eventEmitter) => {
-        const [stamp] = await eventEmitter.emitAsync(findStampEvent, {
-            context,
-            stampNumber: v,
-            orFail: false
-        });
-        if (!stamp) return 'No EXISTE la estampilla ' + v
+        const normalized = String(v || '').trim().toUpperCase();
 
+        const results = await eventEmitter.emitAsync(findStampEvent, {
+            context,
+            stampNumber: normalized,
+            orFail: false,
+        });
+
+        const stamp = results.find(result => !!result);
+
+        if (!stamp) return 'No EXISTE la estampilla ' + normalized;
         return null;
-    }
+    },
 };

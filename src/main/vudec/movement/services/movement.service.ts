@@ -113,11 +113,10 @@ export class MovementService extends CrudServiceFrom(serviceStructure) {
 
     entity.lot = lot;
 
-    //Stamp - ✅ ORIGINAL: Mantener como estaba
     const [stamp] = await this.eventEmitter.emitAsync(findStampEvent, {
       context,
       stampNumber: stampInput.stampNumber,
-      orFail: true  // ← ORIGINAL
+      orFail: true
     });
 
     if (!stamp || !(stamp instanceof Stamp) || !stamp?.id) {

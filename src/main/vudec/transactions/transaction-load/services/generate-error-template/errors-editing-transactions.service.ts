@@ -2,8 +2,8 @@ import { loadWorkbookFromPath } from "src/common/functions/excel/load-workbook-f
 import { TransactionLoadTemplateService } from "../transaction-load-template.service";
 import { IContext } from "src/patterns/crud-pattern/interfaces/context.interface";
 import { ExcelRowError } from "../../interfaces/transaction-load.interface";
-import { TEMPLATE_ERRORS_WHEN_UPDATING } from "../../config/paths.config";
-import { COLUMS } from "../../config/columns.config";
+import { TEMPLATE_ERRORS_WHEN_UPDATING } from "../../utils/exce-template-paths.utils";
+import { COLUMS } from "../../constants/excel.constants";
 import { Injectable, Logger } from "@nestjs/common";
 import * as ExcelJS from 'exceljs';
 

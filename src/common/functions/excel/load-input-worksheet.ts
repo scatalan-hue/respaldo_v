@@ -12,15 +12,3 @@ export async function loadInputWorksheet(input: ExcelInput, sheetIndex = 0): Pro
     }
     return worksheet;
 }
-
-// worksheet
-//  ├── rowCount
-//  ├── columnCount
-//  ├── _rows
-//  ├── _columns
-//  └── name
-
-//plantilla de respuesta
-//devuelve la plantilla desde el disco listo para
-
-// si puedo duplicar la logica es solo cambiar y separar lo que ya esta dando error

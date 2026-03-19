@@ -12,4 +12,4 @@ import { TransactionLoadModule } from './transaction-load/transaction-load.modul
     TransactionLoadModule,
   ],
 })
-export class TransactionsModule {}
+export class TransactionsModule { }

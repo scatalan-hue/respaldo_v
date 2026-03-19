@@ -1,4 +1,4 @@
-import { normalizeEmail, normalizeString, parseDateFromValidated, parseDocType, parseReversion } from "./save-transaction.mapper";
+import { normalizeEmail, normalizeString, parseDateFromValidated } from "../../utils/normalized-data.utils";
 import { CreateContractInput } from "src/main/vudec/contracts/contract/dto/inputs/create-contract.input";
 import { CreateTaxpayerInput } from "src/main/vudec/taxpayer/dto/inputs/create-taxpayer.input";
 import { CreateMovementInput } from "src/main/vudec/movement/dto/inputs/create-movement.input";
@@ -7,6 +7,7 @@ import { IContext } from "src/patterns/crud-pattern/interfaces/context.interface
 import { TypeMovement } from "src/main/vudec/movement/enums/movement-type.enum";
 import { TransactionRowDto } from "../../validators/save-transaction.validator";
 import { TypeDoc } from "src/main/vudec/taxpayer/enums/taxpayer-type.enum";
+import { parseDocType, parseReversion } from "./save-transaction.mapper";
 
 export function taxpayerDto(row: TransactionRowDto): CreateTaxpayerInput {
     //TODO: Mi objetivo es convertir cada fila del Excel en un objeto CreateTaxpayerInput.
@@ -31,8 +32,8 @@ export function contractDto(row: TransactionRowDto, taxpayerId: string, taxpayer
         documentPrincipal: row.docNumber,
         contractValue: Number(row.contractValue),
         contractDate: parseDateFromValidated(row.contractDate),
-        contractDateIni: parseDateFromValidated(row.ContractStartDate),
-        contractDateEnd: parseDateFromValidated(row.ContractEndDate),
+        contractDateIni: parseDateFromValidated(row.contractStartDate),
+        contractDateEnd: parseDateFromValidated(row.contractEndDate),
         taxpayerId,
         taxpayerInput,
         decentralizedInput: taxpayerInput,
@@ -101,5 +102,6 @@ export function applyMovementDto(row: TransactionRowDto, contractId: string, lot
         associatedMovement: normalizeString(row.contractNumber),
         status: MovementStatus.Unsent,
         //TODO:Falta movementRevertId creo que es cuando hay una reversion se le asigna un id pero debo preguntar.
+
     };
 }

@@ -1,4 +1,4 @@
-import { TRANSACTION_LOAD_TRANSACTION_ERROR_TEMPLATE_PATH } from "../../config/paths.config";
+import { TRANSACTION_LOAD_TRANSACTION_ERROR_TEMPLATE_PATH } from "../../utils/exce-template-paths.utils";
 import { loadWorkbookFromPath } from "src/common/functions/excel/load-workbook-from-path";
 import { GET_FAILED_TRANSACTIONS } from "../../entities/queries/transaction-load.query";
 import { TransactionLoadTemplateService } from "../transaction-load-template.service";

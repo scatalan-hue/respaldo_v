@@ -447,7 +447,6 @@ export class ContractService extends CrudServiceFrom(serviceStructure) {
     return { status: ValidationResponse.IN_PROCESS };
   }
 
-
   @OnEvent(findContractByIdEvent)
   async onFindContractByIdEvent({ context, id, orFail = false }: { context: IContext; id: string; orFail: boolean }): Promise<Contract> {
     return await this.findOneBy(context, { where: { id } }, orFail);

@@ -1,6 +1,7 @@
 import { IContext } from "src/patterns/crud-pattern/interfaces/context.interface";
 import { TransactionRowDto } from "../../validators/save-transaction.validator";
 import { SaveExcelRowService } from "./transactional.service";
+import { EXCEL_CONFIG } from "../../constants/excel.constants";
 import { Injectable, Logger } from "@nestjs/common";
 import pMap from "p-map";
 
@@ -8,29 +9,45 @@ import pMap from "p-map";
 export class SaveExcelService {
 
     private readonly logger = new Logger(SaveExcelService.name);
+    constructor(private readonly saveExcelRowService: SaveExcelRowService) { }
 
-    constructor(private readonly rowService: SaveExcelRowService) { }
+    async insertExcelInfo(rows: { rowNumber: number; dto: TransactionRowDto }[], context: IContext) {
 
-    async insertExcelInfo(rows: TransactionRowDto[], context: IContext) {
-
-        const CONCURRENCY = 1;
-
-        return await pMap(rows, async (row, index) => {
-
+        const results = await pMap(rows, async ({ rowNumber, dto }) => {
             try {
-                return await this.rowService.processRow(row, context);
-            } catch (error) {
-
-                this.logger.error(`Error guardando fila ${index + 1}: ${error.message}`);
+                const data = await this.saveExcelRowService.processRow(dto, context);
 
                 return {
-                    row,
+                    rowNumber,
+                    row: dto,
+                    success: true,
+                    data,
+                };
+            } catch (error) {
+                this.logger.error(
+                    `Error guardando fila Excel ${rowNumber}: ${error.message}`,
+                    error.stack,
+                );
+
+                return {
+                    rowNumber,
+                    row: dto,
                     success: false,
-                    error: error.message
+                    error: error.message,
                 };
             }
         },
-            { concurrency: CONCURRENCY }
+            { concurrency: EXCEL_CONFIG.CONCURRENCY }
         );
+        const failures = results.filter(r => !r.success);
+        const successCount = results.filter(r => r.success).length;
+
+        return {
+            total: results.length,
+            successCount,
+            failedCount: failures.length,
+            failures,
+            results,
+        };
     }
 }
