@@ -1,8 +1,6 @@
 import { ErrorRows } from 'src/main/vudec/transactions/transaction-load/interfaces/transaction-load.interface';
-import { Injectable } from '@nestjs/common';
 import * as ExcelJS from 'exceljs';
 
-@Injectable()
 export class ExcelErrorWriterService {
 
     async writeErrorsToTemplate(templatePath: string, errorRows: ErrorRows[], columns: string[], statusColumn: string, messageColumn: string, startRow: number): Promise<ExcelJS.Workbook> {

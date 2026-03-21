@@ -10,15 +10,15 @@ export class TransactionLoadMapper {
 
     const getColumn = (key: string): number => {
       const col = this.COL[key];
-      if (typeof col !== 'number' || col <= 0) {
-        throw new Error(`Columna inválida para "${key}": ${col}`);
-      }
+
+      if (typeof col !== 'number' || col <= 0) throw new Error(`Columna inválida para "${key}": ${col}`);
+
       return col;
     };
 
-    const readCell = (key: string): string => {
+    const readCell = (key: string, caseType?: 'upper' | 'lower' | 'none'): string => {
       const col = getColumn(key);
-      return this.normalizeCellValue(row.getCell(col));
+      return this.getRawTrimmedCell(row.getCell(col), caseType || 'upper');
     };
 
     return {
@@ -32,46 +32,41 @@ export class TransactionLoadMapper {
       movementValue: readCell('movementValue'),
       stampNumber: readCell('stampNumber'),
       firstName: readCell('firstName'),
-      secondName: readCell('secondName'),
+      secondName: readCell('secondName',), // 
       firstLastName: readCell('firstLastName'),
       secondLastName: readCell('secondLastName'),
       docNumber: readCell('docNumber'),
       docType: readCell('docType'),
-      email: readCell('email'),
+      email: readCell('email', 'lower'),
       phone: readCell('phone'),
     };
   }
 
-  private normalizeCellValue(cell: ExcelJS.Cell): string {
+  private getRawTrimmedCell(cell: ExcelJS.Cell, caseType: 'upper' | 'lower' | 'none' = 'upper'): string {
     const value = cell.value;
     if (value === null || value === undefined) return '';
-
     try {
-      if (typeof value === 'string') return String(value).trim().toUpperCase();
-      if (typeof value === 'number') return String(value).trim();
-      if (value instanceof Date) return String(cell.text || '').trim();
-      if (typeof value === 'object') {
-        if ('text' in value && typeof value.text === 'string') {
-          return String(value.text).trim().toUpperCase();
-        }
-        if ('result' in value && value.result !== undefined && value.result !== null) {
-          return String(value.result).trim().toUpperCase();
-        }
+      let result = '';
+      if (typeof value === 'string') result = String(value).trim();
+      else if (typeof value === 'number') result = String(value).trim();
+      else if (value instanceof Date) result = String(cell.text || '').trim();
+      else if (typeof value === 'object') {
+        if ('text' in value) result = String(value.text).trim();
+        else if ('result' in value) result = String(value.result).trim();
       }
-    } catch {
-      return '';
-    }
 
+      if (caseType === 'upper') return result.toUpperCase();
+      if (caseType === 'lower') return result.toLowerCase();
+      return result;
+    } catch { return ''; }
     return '';
   }
 }
 
-
-
 export function parseNumericValue(value?: string): number | undefined {
   if (!value || value === '') return undefined;
   try {
-    const cleaned = String(value).trim().replace(/[,\s]/g, '');
+    const cleaned = String(value).replace(/[,\s]/g, '');
     const num = Number(cleaned);
     return isNaN(num) ? undefined : num;
   } catch {
@@ -85,7 +80,6 @@ export function parseDocType(docType?: string): TypeDoc | undefined {
   const cleaned = String(docType)
     .normalize('NFD')
     .replace(/[^A-Za-z]/g, '')
-    .toUpperCase();
 
   const docTypeMap: Record<string, TypeDoc> = {
     CC: TypeDoc.CC,
@@ -106,5 +100,5 @@ export function parseDocType(docType?: string): TypeDoc | undefined {
 }
 
 export function parseReversion(reversionStr?: string): boolean {
-  return String(reversionStr || '').toUpperCase() === 'SI';
+  return String(reversionStr || '') === 'SI';
 }

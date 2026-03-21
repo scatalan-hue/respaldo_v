@@ -6,6 +6,8 @@ import { CreateTaxpayerInput } from "src/main/vudec/taxpayer/dto/inputs/create-t
 import { CreateMovementInput } from "src/main/vudec/movement/dto/inputs/create-movement.input";
 import { findOrCreateCustomLotEvent } from "src/main/vudec/lots/lot/constants/lot.constants";
 import { createMovementEvent } from "src/main/vudec/movement/constants/events.constants";
+import { createTransactionByContractEvent } from "src/main/vudec/transactions/transaction/constants/events.constants";
+import { Transaction } from "src/main/vudec/transactions/transaction/entities/transaction.entity";
 import { IContext } from "src/patterns/crud-pattern/interfaces/context.interface";
 import { TransactionRowDto } from "../../validators/save-transaction.validator";
 import { EventEmitter2 } from "@nestjs/event-emitter";
@@ -80,13 +82,25 @@ export class SaveExcelRowService {
 
         const applyMovementInput = applyMovementDto(row, contract.id, lotId, taxpayer.id, context);
         const applyMovement = await this.createApplyMovement(applyMovementInput, context, contract, contractInput);
+
+        // Crear la transacción
+        const [transaction] = await this.eventEmitter.emitAsync(createTransactionByContractEvent, {
+            context,
+            createContractInput: contractInput
+        });
+
+        if (!(transaction instanceof Transaction)) {
+            throw new Error('No se pudo crear la transacción asociada al contrato');
+        }
+
         return {
             success: true,
             taxpayer,
             contract,
             lotId,
             adhesionMovement,
-            applyMovement
+            applyMovement,
+            transaction
         };
     }
 }

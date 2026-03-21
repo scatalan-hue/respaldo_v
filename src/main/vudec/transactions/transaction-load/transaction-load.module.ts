@@ -2,7 +2,7 @@ import { ErrorsEditingTransactionsService } from './services/generate-error-temp
 import { TransactionCorrectionExcelService } from './services/edit-transaction/correction-transaction-excel.service';
 import { GetErrorDBService } from './services/generate-error-template/generate-error-transaction.service';
 import { CorrectionRowProcessor } from './services/edit-transaction/correction-load.procesor.service';
-import { ExcelErrorWriterService } from 'src/common/functions/excel/excel-error-writer.service';
+import { ExcelErrorWriterService } from 'src/common/functions/excel/excel-error-writer';
 import { TransactionLoadTemplateService } from './services/transaction-load-template.service';
 import { BatchProcessorService } from './services/save_transaction/batch-processor.service';
 import { CorrectionRowValidator } from './validators/correction-row-transacation.validator';

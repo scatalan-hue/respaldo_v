@@ -6,15 +6,15 @@ export function normalizeCellValue(cell: ExcelJS.Cell): string {
     if (value === null || value === undefined) return '';
 
     try {
-        if (typeof value === 'string') return String(value).trim();
-        if (typeof value === 'number') return String(value).trim();
-        if (value instanceof Date) return String(cell.text || '').trim();
+        if (typeof value === 'string') return String(value);
+        if (typeof value === 'number') return String(value);
+        if (value instanceof Date) return String(cell.text || '');
         if (typeof value === 'object') {
             if ('text' in value && typeof value.text === 'string') {
-                return String(value.text).trim().toUpperCase();
+                return String(value.text).toUpperCase();
             }
             if ('result' in value && value.result !== undefined && value.result !== null) {
-                return String(value.result).trim().toUpperCase();
+                return String(value.result).toUpperCase();
             }
         }
     } catch {
@@ -27,30 +27,20 @@ export function normalizeCellValue(cell: ExcelJS.Cell): string {
 export function normalizeString(value?: string): string | undefined {
     if (value === undefined || value === null || value === '') return undefined;
     try {
-        const text = String(value).trim().toUpperCase();
+        const text = String(value).toUpperCase();
         return text === '' ? undefined : text;
     } catch {
         return undefined;
     }
 }
 
-// Convierte emails a minúsculas y trimea. Retorna undefined si está vacío.
-export function normalizeEmail(value?: string): string | undefined {
-    if (value === undefined || value === null || value === '') return undefined;
-    try {
-        const text = String(value).trim().toLowerCase();
-        return text === '' ? undefined : text;
-    } catch {
-        return undefined;
-    }
-}
 
 // Parsea fechas formato DD/MM/YYYY. Valida lógica de fechas.
 export function parseDateFromValidated(dateStr?: string): Date | undefined {
     if (!dateStr) return undefined;
 
     try {
-        const [day, month, year] = String(dateStr).trim().split('/').map(Number);
+        const [day, month, year] = String(dateStr).split('/').map(Number);
         if (!day || !month || !year) return undefined;
 
         const date = new Date(year, month - 1, day);

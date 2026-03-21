@@ -1,13 +1,14 @@
-import { normalizeEmail, normalizeString, parseDateFromValidated } from "../../utils/normalized-data.utils";
 import { CreateContractInput } from "src/main/vudec/contracts/contract/dto/inputs/create-contract.input";
 import { CreateTaxpayerInput } from "src/main/vudec/taxpayer/dto/inputs/create-taxpayer.input";
 import { CreateMovementInput } from "src/main/vudec/movement/dto/inputs/create-movement.input";
+import { normalizeString, parseDateFromValidated } from "../../utils/normalized-data.utils";
 import { MovementStatus } from "src/main/vudec/movement/enums/movement-status.enum";
 import { IContext } from "src/patterns/crud-pattern/interfaces/context.interface";
 import { TypeMovement } from "src/main/vudec/movement/enums/movement-type.enum";
 import { TransactionRowDto } from "../../validators/save-transaction.validator";
 import { TypeDoc } from "src/main/vudec/taxpayer/enums/taxpayer-type.enum";
 import { parseDocType, parseReversion } from "./save-transaction.mapper";
+import { randomUUID } from "crypto";
 
 export function taxpayerDto(row: TransactionRowDto): CreateTaxpayerInput {
     //TODO: Mi objetivo es convertir cada fila del Excel en un objeto CreateTaxpayerInput.
@@ -15,10 +16,10 @@ export function taxpayerDto(row: TransactionRowDto): CreateTaxpayerInput {
         taxpayerNumber: row.docNumber,
         taxpayerNumberType: parseDocType(row.docType) as TypeDoc,
         name: normalizeString(row.firstName),
-        middleName: row.secondName,
+        middleName: row.secondName || undefined,
         lastName: normalizeString(row.firstLastName),
         secondSurname: normalizeString(row.secondLastName),
-        email: normalizeEmail(row.email),
+        email: (row.email),
         phone: normalizeString(row.phone),
     };
 }
@@ -40,6 +41,8 @@ export function contractDto(row: TransactionRowDto, taxpayerId: string, taxpayer
         movementsInput: [],
         isRevert: parseReversion(row.reversion),
         organizationProductId: context.organizationProduct?.id,
+        contractType: 'EXAMPLE DEV_STIVEN',
+        baseGuid: randomUUID(),
     };
 }
 export function adhesionMovementDto(row: TransactionRowDto, contractId: string, lotId: string, taxpayerId: string, context: IContext): CreateMovementInput {

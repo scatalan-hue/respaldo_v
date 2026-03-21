@@ -57,7 +57,7 @@ export const fieldLabels: Record<keyof TransactionRowDto, string> = {
 
 export function Normalize(value: any): string {
     if (value === null || value === undefined) return '';
-    return String(value).trim();
+    return String(value);
 }
 
 export function validateDateFormat(value: string): boolean {
@@ -83,7 +83,7 @@ export function isRowEmpty(dto: TransactionRowDto): boolean {
 export function parseDocType(v: string): AllowedDocType | null {
     if (!v) return null;
 
-    const normalized = v.trim().toUpperCase();
+    const normalized = v;
 
     // Solo acepta valores exactos
     return ALLOWED_DOC_TYPES.includes(normalized as AllowedDocType)
@@ -120,12 +120,12 @@ export async function validateRow(context: IContext, dto: TransactionRowDto, eve
 export const fieldValidations: Record<keyof TransactionRowDto, (v: string) => string | null> = {
     reversion: (v) => {
         if (!v) return 'es obligatorio';
-        const up = v.toUpperCase();
+        const up = v;
         return up === 'SI' || up === 'NO' ? null : 'debe ser SI o NO';
     },
     contractNumber: (v) => {
         if (!v) return 'es obligatorio';
-        return contractNumberFormat.test(v.toUpperCase()) ? null : 'formato inválido (ej: CO1.ABC123.456)';
+        return contractNumberFormat.test(v) ? null : 'formato inválido (ej: CO1.ABC123.456)';
     },
     contractValue: (v) => {
         if (!v) return 'es obligatorio';
@@ -203,7 +203,7 @@ export const fieldValidations: Record<keyof TransactionRowDto, (v: string) => st
 
 export const asyncFieldValidations: Partial<Record<keyof TransactionRowDto, (context: IContext, v: string, eventEmitter: EventEmitter2) => Promise<string | null>>> = {
     stampNumber: async (context, v, eventEmitter) => {
-        const normalized = String(v || '').trim().toUpperCase();
+        const normalized = String(v || '');
 
         const results = await eventEmitter.emitAsync(findStampEvent, {
             context,

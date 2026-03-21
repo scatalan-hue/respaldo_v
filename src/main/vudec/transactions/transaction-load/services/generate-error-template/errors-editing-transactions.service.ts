@@ -3,7 +3,7 @@ import { TransactionLoadTemplateService } from "../transaction-load-template.ser
 import { IContext } from "src/patterns/crud-pattern/interfaces/context.interface";
 import { ExcelRowError } from "../../interfaces/transaction-load.interface";
 import { TEMPLATE_ERRORS_WHEN_UPDATING } from "../../utils/exce-template-paths.utils";
-import { COLUMS } from "../../constants/excel.constants";
+import { COLUMNS_ERROR_TEMPLATE_EDIT_TRANSACTIONS } from "../../constants/excel.constants";
 import { Injectable, Logger } from "@nestjs/common";
 import * as ExcelJS from 'exceljs';
 
@@ -76,13 +76,13 @@ export class ErrorsEditingTransactionsService {
             const totalCols = worksheet.columnCount;
             const rowData = [...data];
             while (rowData.length < totalCols + 1) rowData.push('');
-            rowData[COLUMS.state] = 'ERROR';
-            rowData[COLUMS.errorsUpdating] = messages.join('\n');
+            rowData[COLUMNS_ERROR_TEMPLATE_EDIT_TRANSACTIONS.state] = 'ERROR';
+            rowData[COLUMNS_ERROR_TEMPLATE_EDIT_TRANSACTIONS.errorsUpdating] = messages.join('\n');
 
             const excelRow = worksheet.getRow(rowNum);
             excelRow.values = rowData;
 
-            const errorCell = excelRow.getCell(COLUMS.errorsUpdating);
+            const errorCell = excelRow.getCell(COLUMNS_ERROR_TEMPLATE_EDIT_TRANSACTIONS.errorsUpdating);
             errorCell.font = { bold: true, color: { argb: 'FFFF0000' } };
             errorCell.alignment = { wrapText: true, vertical: 'top', horizontal: 'left' };
             excelRow.height = 30;

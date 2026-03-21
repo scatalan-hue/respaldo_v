@@ -5,9 +5,9 @@ import { ValidationResponse } from "../../../transaction/enum/validation-respons
 import { TransactionStatus } from "../../../transaction/enum/transaction-status.enum";
 import { IContext } from "src/patterns/crud-pattern/interfaces/context.interface";
 import { Transaction } from "../../../transaction/entities/transaction.entity";
+import { BATCH_SIZE, EXCEL_COLUMNS } from "../../constants/excel.constants";
 import { Taxpayer } from "src/main/vudec/taxpayer/entity/taxpayer.entity";
 import { Normalize } from "../../validators/save-transaction.validator";
-import { BATCH_SIZE, EXCEL_COLUMNS } from "../../constants/excel.constants";
 import { ExcelRowData } from "../../types/excel-row.type";
 import { Injectable, Logger } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
@@ -63,8 +63,8 @@ export class CorrectionRowProcessor {
     async processRow(row: Row, rowNumber: number, transactionMap: Map<string, Transaction>, taxpayersToUpdate: Map<string, string>): Promise<ProcessResult> {
 
         const transactionId = Normalize(row.getCell(EXCEL_COLUMNS.TRANSACTION_ID).value);
-        const newContractNumber = Normalize(row.getCell(EXCEL_COLUMNS.CONTRACT_NUMBER).value);
-        const newTaxpayerNumber = Normalize(row.getCell(EXCEL_COLUMNS.TAXPAYER_NUMBER).value);
+        const newContractNumber = Normalize(row.getCell(EXCEL_COLUMNS.NEW_CONTRACT_NUMBER).value);
+        const newTaxpayerNumber = Normalize(row.getCell(EXCEL_COLUMNS.NEW_TAXPAYER_NUMBER).value);
 
         //validar que los datos principales existan
         let errorValidation = this.validator.ValidateExistingData(transactionId, newContractNumber, rowNumber);
@@ -94,7 +94,13 @@ export class CorrectionRowProcessor {
             if (newTaxpayerNumber && transaction.taxpayerId) {
                 // Validar que el taxpayerId sea un GUID válido antes de agregarlo
                 if (!this.isValidGUID(transaction.taxpayerId)) {
-                    return { success: false, error: { row: rowNumber, message: `ID de contribuyente inválido: ${transaction.taxpayerId}` } }
+                    return {
+                        success: false,
+                        error: {
+                            row: rowNumber,
+                            message: `ID de contribuyente inválido: ${transaction.taxpayerId}`
+                        }
+                    }
                 }
                 taxpayersToUpdate.set(transaction.taxpayerId, newTaxpayerNumber);
             }
@@ -105,11 +111,11 @@ export class CorrectionRowProcessor {
         }
     }
     updateTransaction(transaction: Transaction, newContractNumber: string, newTaxpayerNumber: string): Transaction | ProcessResult {
-        transaction.contractNumber = newContractNumber.toUpperCase();
+        transaction.contractNumber = newContractNumber;
         if (transaction.data) {
             try {
                 const dataJson = JSON.parse(transaction.data);
-                dataJson.consecutive = newContractNumber.toUpperCase();
+                dataJson.consecutive = newContractNumber;
                 if (newTaxpayerNumber) {
                     transaction.taxpayer.taxpayerNumber = newTaxpayerNumber;
                     dataJson.taxpayerInput.taxpayerNumber = newTaxpayerNumber;
@@ -159,7 +165,7 @@ export class CorrectionRowProcessor {
                 const taxpayersArray = Array.from(taxpayersToUpdate.entries())
                     .filter(([id]) => this.isValidGUID(id))  // ← Validar GUIDs
                     .map(([id, taxpayerNumber]) => ({
-                        id: id.trim(),  // ← Limpiar espacios
+                        id: id,
                         taxpayerNumber: taxpayerNumber?.trim() || '',
                     }));
 

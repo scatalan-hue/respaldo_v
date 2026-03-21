@@ -4,7 +4,7 @@ import { GET_FAILED_TRANSACTIONS } from "../../entities/queries/transaction-load
 import { TransactionLoadTemplateService } from "../transaction-load-template.service";
 import { IQueryResult } from "../../interfaces/generate-error-template.interface";
 import { IContext } from "src/patterns/crud-pattern/interfaces/context.interface";
-import { DATA_START_ROW } from "../../constants/excel.constants";
+import { EXCEL_CONFIG } from "../../constants/excel.constants";
 import { Injectable, NotFoundException } from "@nestjs/common";
 import { DataSource } from "typeorm";
 
@@ -34,7 +34,7 @@ export class GetErrorDBService {
         const workbook = await loadWorkbookFromPath(TRANSACTION_LOAD_TRANSACTION_ERROR_TEMPLATE_PATH);
         const worksheet = workbook.worksheets[0] || workbook.getWorksheet(1);
 
-        let rowIndex = DATA_START_ROW;
+        let rowIndex = EXCEL_CONFIG.START_ROW;
 
         for (const row of data) {
             worksheet.addRow([

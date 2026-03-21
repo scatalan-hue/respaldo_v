@@ -11,6 +11,5 @@ export class LoadExcelCorrection {
 
         const fileData = await this.fileService.findBuffer(context, fileId, true);
         const inputWorksheet = loadInputWorksheet(fileData.buffer);
-
     }
 }

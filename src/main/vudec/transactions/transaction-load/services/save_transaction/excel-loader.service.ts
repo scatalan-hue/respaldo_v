@@ -1,13 +1,13 @@
-import { TransactionLoadMapper } from '../../mappers/save-transaction.mapper/save-transaction.mapper';
-import { ExcelErrorWriterService } from 'src/common/functions/excel/excel-error-writer.service';
 import { TRANSACTION_LOAD_USER_DATA_ERROR_TEMPLATE_PATH } from '../../utils/exce-template-paths.utils';
+import { TransactionLoadMapper } from '../../mappers/save-transaction.mapper/save-transaction.mapper';
+import { ExcelErrorWriterService } from 'src/common/functions/excel/excel-error-writer';
 import { TransactionLoadTemplateService } from '../transaction-load-template.service';
 import { loadInputWorksheet } from 'src/common/functions/excel/load-input-worksheet';
 import { IContext } from 'src/patterns/crud-pattern/interfaces/context.interface';
 import { TransactionLoadEntity } from '../../entities/transaction-load.entity';
 import { FilesService } from 'src/general/files/services/files.service';
+import { COL, EXCEL_CONFIG } from '../../constants/excel.constants';
 import { BatchProcessorService } from './batch-processor.service';
-import { COL, DATA_START_ROW } from '../../constants/excel.constants';
 import { LoadStatus } from '../../enums/save-transaction.enums';
 import { SaveExcelService } from './save-data-excel.service';
 import { Injectable, Logger } from '@nestjs/common';
@@ -31,7 +31,6 @@ export class TransactionLoadService {
 
     async processTransactionLoadFile(context: IContext, fileId: string, userId: string) {
         const result = await this.processInternal(context, fileId, userId);
-
         return {
             transactionLoad: result.transactionLoad,
             errors: result.errors,
@@ -57,7 +56,7 @@ export class TransactionLoadService {
                 context,
                 inputWorksheet,
                 this.rowMapper,
-                DATA_START_ROW,
+                EXCEL_CONFIG.START_ROW,
             );
 
             // Errores de validación
@@ -76,7 +75,7 @@ export class TransactionLoadService {
                     columns,
                     'estado',
                     'mensaje',
-                    DATA_START_ROW,
+                    EXCEL_CONFIG.START_ROW,
                 );
 
                 const resultFileInfo = await this.templateService.loadWorksheetFromBuffer(
