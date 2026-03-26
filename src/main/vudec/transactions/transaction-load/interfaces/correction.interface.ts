@@ -1,10 +1,8 @@
-interface COLUMNS_INPUT_TEMPLATE_EDIT_TRANSACTIONS {
-    rowNumber: number;
-    transactionId: string;
-    contractNumber: string;
-    currentContractNumber: string;
-    currentTaxpayerNumber: string;
-    errorMessage?: string;
-    newContractNumber: string;
-    newTaxpayerNumber?: string
+import { Transaction } from "../../transaction/entities/transaction.entity";
+import { ExcelRowError } from "./transaction-load.interface";
+
+export interface ProcessCorrectionRowsResult {
+    transactionsToUpdate: Transaction[];
+    taxpayersToUpdate: Map<string, string>;
+    errors: ExcelRowError[];
 }

@@ -56,6 +56,13 @@ export class TransactionService extends CrudServiceFrom(serviceStructure) {
 
 	async manageTransaction(context: IContext, createContractInput: CreateContractInput): Promise<Transaction> {
 
+		console.log('[TransactionService.manageTransaction] context.organizationProduct.url INICIO:', context.organizationProduct?.url);
+		console.log('[TransactionService.manageTransaction] context.organizationProduct:', JSON.stringify({
+			id: context.organizationProduct?.id,
+			key: context.organizationProduct?.key?.substring(0, 20),
+			url: context.organizationProduct?.url,
+		}, null, 2));
+
 		const [taxpayer] = await this.eventEmitter.emitAsync(createOrUpdateTaxpayerEvent, {
 			context,
 			createInput: { ...createContractInput.taxpayerInput, type: UserTypes.Public },
@@ -96,7 +103,7 @@ export class TransactionService extends CrudServiceFrom(serviceStructure) {
 			payload: {
 				config: {
 					serviceName: '',
-					url: context.organizationProduct.url,
+					url: (await context.organizationProduct.url),
 					method: HttpMethod.POST,
 					requestData: undefined
 				},

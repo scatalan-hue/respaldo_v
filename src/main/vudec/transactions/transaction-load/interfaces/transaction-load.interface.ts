@@ -1,3 +1,5 @@
+import { Transaction } from "../../transaction/entities/transaction.entity";
+
 export interface ProcessResult {
     success: boolean;
     error?: { row: number; message: string };

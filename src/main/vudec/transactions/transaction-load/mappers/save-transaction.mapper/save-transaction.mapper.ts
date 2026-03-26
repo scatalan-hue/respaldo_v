@@ -1,5 +1,5 @@
-import { TransactionRowDto } from '../../validators/save-transaction.validator';
 import { TypeDoc } from 'src/main/vudec/taxpayer/enums/taxpayer-type.enum';
+import { TransactionRowDto } from '../../types/save-transaction.type';
 import * as ExcelJS from 'exceljs';
 
 export class TransactionLoadMapper {

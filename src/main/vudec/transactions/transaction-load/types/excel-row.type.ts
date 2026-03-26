@@ -1,5 +1,5 @@
-import { TransactionRowDto } from "../validators/save-transaction.validator";
 import { Row } from "exceljs";
+import { TransactionRowDto } from "./save-transaction.type";
 
 
 export type ValidRows = {

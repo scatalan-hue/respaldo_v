@@ -1,39 +1,15 @@
+import { CONTRACT_NUMBER_FORMAT, DATE_FORMAT, EMAIL_FORMAT } from "../utils/data-format.utils";
 import { IContext } from "src/patterns/crud-pattern/interfaces/context.interface";
 import { findStampEvent } from "src/main/vudec/stamp/constants/stamp.constants";
 import { TypeDoc } from "src/main/vudec/taxpayer/enums/taxpayer-type.enum";
+import { TransactionRowDto } from "../types/save-transaction.type";
 import { EventEmitter2 } from "@nestjs/event-emitter";
 
-export type TransactionRowDto = {
-    reversion: string;
-    contractNumber: string;
-    contractValue: string;
-    contractDate: string;
-    contractStartDate: string;
-    contractEndDate: string;
-    movementDate: string;
-    movementValue: string;
-    stampNumber: string;
-    firstName: string;
-    secondName: string;
-    firstLastName: string;
-    secondLastName: string;
-    docNumber: string;
-    docType: string;
-    email: string;
-    phone: string;
-};
 
 
 // VALORES PERMITIDOS SOLO ESTOS 
 const ALLOWED_DOC_TYPES = Object.values(TypeDoc);
 type AllowedDocType = typeof ALLOWED_DOC_TYPES[number];
-
-export const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
-
-// Required
-export const contractNumberFormat = /^CO1\.[A-Z0-9]+\.\d+$/;
-const emailFormat = /^[\w.-]+@([\w-]+\.)+[\w-]{2,4}$/;
-const dateFormat = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/;
 
 export const fieldLabels: Record<keyof TransactionRowDto, string> = {
     reversion: 'Reversión',
@@ -62,7 +38,7 @@ export function Normalize(value: any): string {
 
 export function validateDateFormat(value: string): boolean {
     if (!value) return false;
-    if (!dateFormat.test(value)) return false;
+    if (!DATE_FORMAT.test(value)) return false;
     const [day, month, year] = value.split('/').map(Number);
     if (month < 1 || month > 12) return false;
     if (day < 1 || day > 31) return false;
@@ -125,7 +101,7 @@ export const fieldValidations: Record<keyof TransactionRowDto, (v: string) => st
     },
     contractNumber: (v) => {
         if (!v) return 'es obligatorio';
-        return contractNumberFormat.test(v) ? null : 'formato inválido (ej: CO1.ABC123.456)';
+        return CONTRACT_NUMBER_FORMAT.test(v) ? null : 'formato inválido (ej: CO1.ABC123.456)';
     },
     contractValue: (v) => {
         if (!v) return 'es obligatorio';
@@ -186,7 +162,7 @@ export const fieldValidations: Record<keyof TransactionRowDto, (v: string) => st
     },
     email: (v) => {
         if (!v) return 'es obligatorio';
-        return emailFormat.test(v) ? null : 'correo inválido';
+        return EMAIL_FORMAT.test(v) ? null : 'correo inválido';
     },
     phone: (v) => {
         if (!v) return 'es obligatorio';

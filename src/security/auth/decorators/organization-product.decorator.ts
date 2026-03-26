@@ -9,12 +9,12 @@ import { CustomHeaders } from '../enum/custom-headers';
 
 @Injectable()
 export class OrganizationProductInterceptor implements NestInterceptor {
-  constructor(private readonly eventEmitter: EventEmitter2) {}
-  
+  constructor(private readonly eventEmitter: EventEmitter2) { }
+
 
   async intercept(context: ExecutionContext, next: CallHandler): Promise<Observable<any>> {
     const req = ContextUtils.getRequest(context);
-    const apiKey = req.headers[CustomHeaders.Apikey]; 
+    const apiKey = req.headers[CustomHeaders.Apikey];
     if (apiKey) {
       const [organizationProduct] = await this.eventEmitter.emitAsync(findOrganizationProductByKeyEvent, {
         context,

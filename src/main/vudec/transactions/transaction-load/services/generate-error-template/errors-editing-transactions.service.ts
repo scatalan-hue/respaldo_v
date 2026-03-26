@@ -1,9 +1,9 @@
+import { COLUMNS_ERROR_TEMPLATE_EDIT_TRANSACTIONS } from "../../constants/edit-transaction.constants";
 import { loadWorkbookFromPath } from "src/common/functions/excel/load-workbook-from-path";
 import { TransactionLoadTemplateService } from "../transaction-load-template.service";
+import { TEMPLATE_ERRORS_WHEN_UPDATING } from "../../utils/exce-template-paths.utils";
 import { IContext } from "src/patterns/crud-pattern/interfaces/context.interface";
 import { ExcelRowError } from "../../interfaces/transaction-load.interface";
-import { TEMPLATE_ERRORS_WHEN_UPDATING } from "../../utils/exce-template-paths.utils";
-import { COLUMNS_ERROR_TEMPLATE_EDIT_TRANSACTIONS } from "../../constants/excel.constants";
 import { Injectable, Logger } from "@nestjs/common";
 import * as ExcelJS from 'exceljs';
 
@@ -14,6 +14,19 @@ export class ErrorsEditingTransactionsService {
     constructor(
         private readonly templateService: TransactionLoadTemplateService,
     ) { }
+
+    hasErrors(errors: ExcelRowError[]): boolean {
+        return Array.isArray(errors) && errors.length > 0;
+    }
+
+    getErrorSummary(errors: ExcelRowError[]): { totalErrors: number; summary: string } {
+        const totalErrors = errors?.length ?? 0;
+
+        return {
+            totalErrors,
+            summary: `Se encontraron ${totalErrors} errores durante el procesamiento del archivo.`,
+        };
+    }
 
     async generateCorrectionErrorExcel(context: IContext, errors: ExcelRowError[], fileId: string): Promise<{ fileId: string } | null> {
 
@@ -56,52 +69,46 @@ export class ErrorsEditingTransactionsService {
         }
     }
 
-    private writeErrorsToTemplate(
-        worksheet: ExcelJS.Worksheet,
+    private writeErrorsToTemplate(worksheet: ExcelJS.Worksheet, errors: ExcelRowError[]): void {
+        const groupedErrors = new Map<number, { data: any; messages: string[] }>();
 
-        errors: ExcelRowError[]
-    ): void {
-        // Agrupar errores por fila
-        const groupedErrors = new Map<number, { data: any, messages: string[] }>();
         for (const error of errors) {
             const rowNum = error.row;
-            const data = Array.isArray(error.originalData) ? error.originalData : [];
+
             if (!groupedErrors.has(rowNum)) {
-                groupedErrors.set(rowNum, { data, messages: [] });
+                groupedErrors.set(rowNum, {
+                    data: error.originalData ?? {},
+                    messages: [],
+                });
             }
+
             groupedErrors.get(rowNum)!.messages.push(error.message);
         }
 
         for (const [rowNum, { data, messages }] of groupedErrors.entries()) {
-            const totalCols = worksheet.columnCount;
-            const rowData = [...data];
-            while (rowData.length < totalCols + 1) rowData.push('');
-            rowData[COLUMNS_ERROR_TEMPLATE_EDIT_TRANSACTIONS.state] = 'ERROR';
-            rowData[COLUMNS_ERROR_TEMPLATE_EDIT_TRANSACTIONS.errorsUpdating] = messages.join('\n');
-
             const excelRow = worksheet.getRow(rowNum);
-            excelRow.values = rowData;
+
+            excelRow.getCell(1).value = data?.transactionId ?? '';
+            excelRow.getCell(2).value = data?.currentContractNumber ?? '';
+            excelRow.getCell(3).value = data?.currentTaxpayerNumber ?? '';
+            excelRow.getCell(4).value = data?.errorType ?? '';
+            excelRow.getCell(5).value = data?.errorDescription ?? '';
+            excelRow.getCell(6).value = data?.newContractNumber ?? '';
+            excelRow.getCell(7).value = data?.newTaxpayerNumber ?? '';
+
+            excelRow.getCell(COLUMNS_ERROR_TEMPLATE_EDIT_TRANSACTIONS.state).value = 'ERROR';
+            excelRow.getCell(COLUMNS_ERROR_TEMPLATE_EDIT_TRANSACTIONS.errorsUpdating).value = messages.join('\n');
+
+            const stateCell = excelRow.getCell(COLUMNS_ERROR_TEMPLATE_EDIT_TRANSACTIONS.state);
+            stateCell.font = { bold: true, color: { argb: 'FFFF0000' } };
+            stateCell.alignment = { vertical: 'middle', horizontal: 'center' };
 
             const errorCell = excelRow.getCell(COLUMNS_ERROR_TEMPLATE_EDIT_TRANSACTIONS.errorsUpdating);
             errorCell.font = { bold: true, color: { argb: 'FFFF0000' } };
             errorCell.alignment = { wrapText: true, vertical: 'top', horizontal: 'left' };
+
             excelRow.height = 30;
             excelRow.commit();
         }
-    }
-
-    hasErrors(errors: ExcelRowError[]): boolean {
-        return errors && errors.length > 0;
-    }
-    getErrorSummary(errors: ExcelRowError[]): { total: number; summary: string } {
-        if (!this.hasErrors(errors)) {
-            return { total: 0, summary: 'No hay errores' };
-        }
-        const errorCount = errors.length;
-        const uniqueMessages = new Set(errors.map(e => e.message));
-        return {
-            total: errorCount,
-            summary: `${errorCount} errores encontrados en ${uniqueMessages.size} tipo(s) de error`,
-        };
     }
 }

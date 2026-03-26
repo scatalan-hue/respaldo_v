@@ -5,10 +5,10 @@ import { normalizeString, parseDateFromValidated } from "../../utils/normalized-
 import { MovementStatus } from "src/main/vudec/movement/enums/movement-status.enum";
 import { IContext } from "src/patterns/crud-pattern/interfaces/context.interface";
 import { TypeMovement } from "src/main/vudec/movement/enums/movement-type.enum";
-import { TransactionRowDto } from "../../validators/save-transaction.validator";
 import { TypeDoc } from "src/main/vudec/taxpayer/enums/taxpayer-type.enum";
 import { parseDocType, parseReversion } from "./save-transaction.mapper";
 import { randomUUID } from "crypto";
+import { TransactionRowDto } from "../../types/save-transaction.type";
 
 export function taxpayerDto(row: TransactionRowDto): CreateTaxpayerInput {
     //TODO: Mi objetivo es convertir cada fila del Excel en un objeto CreateTaxpayerInput.
@@ -29,7 +29,7 @@ export function contractDto(row: TransactionRowDto, taxpayerId: string, taxpayer
         consecutive,
         contractName: consecutive,
         internalId: consecutive,
-        description: consecutive,
+        description: 'Example_dev_stiven',
         documentPrincipal: row.docNumber,
         contractValue: Number(row.contractValue),
         contractDate: parseDateFromValidated(row.contractDate),
@@ -74,6 +74,7 @@ export function adhesionMovementDto(row: TransactionRowDto, contractId: string, 
         taxBasisValue: 0,//FIXME:  buscar que valor debe ir aquí.
         //TODO:Falta movementRevertId creo que es cuando hay una reversion se le asigna un id pero debo preguntar.
         group: TypeMovement.Register
+
     };
 }
 export function applyMovementDto(row: TransactionRowDto, contractId: string, lotId: string, taxpayerId: string, context: IContext): CreateMovementInput {
@@ -105,6 +106,5 @@ export function applyMovementDto(row: TransactionRowDto, contractId: string, lot
         associatedMovement: normalizeString(row.contractNumber),
         status: MovementStatus.Unsent,
         //TODO:Falta movementRevertId creo que es cuando hay una reversion se le asigna un id pero debo preguntar.
-
     };
 }

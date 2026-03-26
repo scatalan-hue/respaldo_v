@@ -4,7 +4,7 @@ import { GET_FAILED_TRANSACTIONS } from "../../entities/queries/transaction-load
 import { TransactionLoadTemplateService } from "../transaction-load-template.service";
 import { IQueryResult } from "../../interfaces/generate-error-template.interface";
 import { IContext } from "src/patterns/crud-pattern/interfaces/context.interface";
-import { EXCEL_CONFIG } from "../../constants/excel.constants";
+import { EXCEL_CONFIG } from "../../constants/edit-transaction.constants";
 import { Injectable, NotFoundException } from "@nestjs/common";
 import { DataSource } from "typeorm";
 

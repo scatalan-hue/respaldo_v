@@ -5,9 +5,10 @@ import { TransactionLoadTemplateService } from '../transaction-load-template.ser
 import { loadInputWorksheet } from 'src/common/functions/excel/load-input-worksheet';
 import { IContext } from 'src/patterns/crud-pattern/interfaces/context.interface';
 import { TransactionLoadEntity } from '../../entities/transaction-load.entity';
+import { EXCEL_CONFIG } from '../../constants/edit-transaction.constants';
 import { FilesService } from 'src/general/files/services/files.service';
-import { COL, EXCEL_CONFIG } from '../../constants/excel.constants';
 import { BatchProcessorService } from './batch-processor.service';
+import { COL } from '../../constants/save-transaction.constants';
 import { LoadStatus } from '../../enums/save-transaction.enums';
 import { SaveExcelService } from './save-data-excel.service';
 import { Injectable, Logger } from '@nestjs/common';

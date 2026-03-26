@@ -1,7 +1,7 @@
 import { IContext } from "src/patterns/crud-pattern/interfaces/context.interface";
-import { TransactionRowDto } from "../../validators/save-transaction.validator";
+import { EXCEL_CONFIG } from "../../constants/edit-transaction.constants";
+import { TransactionRowDto } from "../../types/save-transaction.type";
 import { SaveExcelRowService } from "./transactional.service";
-import { EXCEL_CONFIG } from "../../constants/excel.constants";
 import { Injectable, Logger } from "@nestjs/common";
 import pMap from "p-map";
 

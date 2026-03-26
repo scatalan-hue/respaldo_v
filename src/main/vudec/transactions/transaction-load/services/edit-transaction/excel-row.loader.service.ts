@@ -1,62 +1,45 @@
-import { loadWorkbookFromBuffer } from "src/common/functions/excel/load-workbook-from-path";
-import { Normalize, uuidRegex } from "../../validators/save-transaction.validator";
-import { Transaction } from "../../../transaction/entities/transaction.entity";
-import { EXCEL_COLUMNS, EXCEL_CONFIG } from "../../constants/excel.constants";
-import { ExcelRowError } from "../../interfaces/transaction-load.interface";
-import { ExcelRowData } from "../../types/excel-row.type";
-import { InjectRepository } from "@nestjs/typeorm";
-import { Injectable } from "@nestjs/common";
-import { In, Repository } from "typeorm";
+import { COLUMNS_INPUT_TEMPLATE_EDIT_TRANSACTIONS, EXCEL_CONFIG } from '../../constants/edit-transaction.constants';
+import { EditTransactionRowMapper } from '../../mappers/edit-transaction/edit-transaction.mapper';
+import { loadWorkbookFromBuffer } from 'src/common/functions/excel/load-workbook-from-path';
+import { Transaction } from '../../../transaction/entities/transaction.entity';
+import { EditTransactionRowDto } from '../../types/edit-transaction.type';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Injectable } from '@nestjs/common';
+import { In, Repository } from 'typeorm';
 
 @Injectable()
 export class ExcelRowLoader {
     constructor(
         @InjectRepository(Transaction)
-        private readonly transactionRepository: Repository<Transaction>
+        private readonly transactionRepository: Repository<Transaction>,
     ) { }
 
-    async loadExcelRows(buffer: Buffer): Promise<ExcelRowData[]> {// Carga todas las filas del Excel, ignorando vacías
+    async loadExcelRows(buffer: Buffer): Promise<EditTransactionRowDto[]> {
         const workbook = await loadWorkbookFromBuffer(buffer);
         const worksheet = workbook.worksheets[0];
-        const rows: ExcelRowData[] = [];
+        const rows: EditTransactionRowDto[] = [];
+        const mapper = new EditTransactionRowMapper(COLUMNS_INPUT_TEMPLATE_EDIT_TRANSACTIONS);
 
-        worksheet.eachRow({ includeEmpty: false }, (row, rowNumber) => {
-            if (rowNumber > EXCEL_CONFIG.HEADER_ROWS) {
-                rows.push({ row, rowNumber })
+        worksheet.eachRow({ includeEmpty: false }, (_, rowNumber) => {
+            if (rowNumber >= EXCEL_CONFIG.START_ROW) {
+                rows.push(mapper.mapRow(worksheet, rowNumber));
             }
-        })
+        });
+
         return rows;
     }
 
-    async preloadTransactions(rows: ExcelRowData[]): Promise<{ transactionMap: Map<string, Transaction>, uuidErrors: ExcelRowError[] }> {
-        const transactionsIds = rows
-            .map(t => ({
-                id: Normalize(t.row.getCell(EXCEL_COLUMNS.TRANSACTION_ID).value),
-                rowNumber: t.rowNumber
-            })).filter(t => !!t.id);
+    async preloadTransactions(rows: EditTransactionRowDto[]): Promise<{ transactionMap: Map<string, Transaction> }> {
 
-        const validIds: string[] = [];
-        const uuidErrors: ExcelRowError[] = [];
+        const transactionIds = rows.map(row => row.transactionId).filter(id => !!id);
 
-        for (const t of transactionsIds) {
-            if (uuidRegex.test(t.id)) {
-                validIds.push(t.id);
-            } else {
-                uuidErrors.push({
-                    row: t.rowNumber,
-                    message: `transactionId inválido: ${t.id}`
-                });
-            }
-        }
-
-        const uniqueIds = [...new Set(validIds)];
+        const uniqueIds = [...new Set(transactionIds)];
         const transactions = await this.transactionRepository.find({
-            where: { id: In(uniqueIds) }
+            where: { id: In(uniqueIds) },
         });
 
         return {
-            transactionMap: new Map(transactions.map(t => [t.id, t])),
-            uuidErrors
+            transactionMap: new Map(transactions.map(transaction => [transaction.id, transaction])),
         };
     }
 }
